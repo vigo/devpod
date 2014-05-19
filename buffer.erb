@@ -1,0 +1,150 @@
+#<%= current_page.title %>
+
+#<%= current_page.date %>
+
+#<%= current_page.tags %>
+
+<% if paginate && num_pages > 1 %>
+  <p>Page <%= page_number %> of <%= num_pages %></p>
+
+  <% if prev_page %>
+    <p><%= link_to 'Previous page', prev_page %></p>
+  <% end %>
+<% end %>
+
+<% page_articles.each_with_index do |article, i| %>
+  <h2><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></h2>
+  <p>
+    <%= article.summary %>
+  </p>
+  <%= link_to 'Read more', article %>
+<% end %>
+
+<% if paginate %>
+  <% if next_page %>
+    <p><%= link_to 'Next page', next_page %></p>
+  <% end %>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="home" class="block">
+  <div class="container">
+      <div class="row">
+          <div class="col-xs-12">
+            logo
+          </div>
+      </div>
+  </div>
+</div>
+
+<div id="posts" class="block">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+
+        <ul class="list-unstyled list-episodes">
+          <% page_articles.each_with_index do |article, i| %>
+            <li>
+              <h3><%= link_to article.title, article %><small><%= I18n.localize(article.date, :format => "%B %e / %Y")  %></small></h3>
+              <%= article.summary %>
+              <p><i class="glyphicon glyphicon-download"></i> <a href="#">İndir</a> [ <%= article.metadata[:page]['size'] %> Mb ]</p>
+            </li>
+          <% end %>
+        </ul>
+
+        <% if paginate %>
+          <% if next_page %>
+            <p><%= link_to 'Next page', next_page %></p>
+          <% end %>
+        <% end %>
+
+        <% if paginate && num_pages > 1 %>
+          <p>Page <%= page_number %> of <%= num_pages %></p>
+          <% if prev_page %>
+            <p><%= link_to 'Previous page', prev_page %></p>
+          <% end %>
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<ul class="list-unstyled list-episodes">
+  <% page_articles.each_with_index do |article, i| %>
+    <li>
+      <h3><%= link_to article.title, article, :target => "_self" %><small><%= I18n.localize(article.date, :format => "%B %e / %Y") %></small></h3>
+      <%= article.summary %>
+      <p><i class="glyphicon glyphicon-download"></i> <a href="#">İndir</a> [ <%= article.metadata[:page]['size'] %> Mb ]</p>
+    </li>
+  <% end %>
+</ul>
+
+
+
+
+
+
+
+<div id="post-detail">
+  <h1><%= current_page.title %></h1>
+  <h2><%= I18n.localize(current_page.date, :format => "%e %B %Y") %></h2>
+  <%= yield %>
+  <div id="tag-cloud">
+    <% current_page.tags.each do |tag| %>
+      <span class="badge"><%= tag %></span>
+    <% end %>
+  </div>
+</div>
+
+
+
+<% page_articles.each_with_index do |article, i| %>
+  <p><%= link_to article.title, article %></p>
+  <% article.tags.each do |tag| %>
+    <%= link_to tag, tag_path(tag) %>
+  <% end %>
+<% end %>
+
+
+
+// tag
+
+<h1>Articles tagged '<%= tagname %>'</h1>
+
+<% if paginate && num_pages > 1 %>
+  <p>Page <%= page_number %> of <%= num_pages %></p>
+
+  <% if prev_page %>
+    <p><%= link_to 'Previous page', prev_page %></p>
+  <% end %>
+<% end %>
+
+<ul>
+  <% page_articles.each_with_index do |article, i| %>
+    <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
+  <% end %>
+</ul>
+
+<% if paginate %>
+  <% if next_page %>
+    <p><%= link_to 'Next page', next_page %></p>
+  <% end %>
+<% end %>

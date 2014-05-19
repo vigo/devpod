@@ -1,0 +1,37 @@
+---
+pageable: true
+per_page: 10
+---
+<div class="block block-main">
+  <div class="container">
+      <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <%= partial "partials/logo_part" %>
+          </div>
+
+          <div class="col-xs-12 col-sm-7 col-sm-offset-1">
+
+            <ol class="breadcrumb">
+              <li><a href="/" target="_self">Anasayfa</a></li>
+              <li class="active">Etiket: <%= tagname %></li>
+            </ol>
+
+            <h1>Etiket "<strong><%= tagname %></strong>" ( <%= page_articles.count %> )</h1>
+
+            <ul class="list-unstyled list-last-episodes">
+              <% page_articles.each_with_index do |article, i| %>
+                <li>
+                  <h4>
+                    <%= link_to article.title, article, :target => "_self", :title => "Bölüm notları ve detaylar için tıklayın" %>
+                    <small><%= I18n.localize(article.date, :format => "%B %e / %Y") %></small>
+                  </h4>
+                  <p><a class="btn btn-warning" href="<%= article.metadata[:page]['download'] %>"><i class="glyphicon glyphicon-download"></i> <%= article.metadata[:page]['size'] %></a></p>
+                  <p><%= article.summary %></p>
+                </li>
+              <% end %>
+            </ul>
+
+          </div>
+      </div>
+  </div>
+</div>

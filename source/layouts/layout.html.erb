@@ -1,6 +1,6 @@
 <%
-HTML_TITLE = "Hello World..."
-HTML_DESCRIPTION = "Description..."
+HTML_TITLE = "devPod | Türkçe Developer Podcast"
+HTML_DESCRIPTION = "Türkçe kaynak yok diyenlere müjde! Türkçe podcast! Açık kaynak, Mac, Linux ve tüm popüler web teknolojileri!"
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +9,7 @@ HTML_DESCRIPTION = "Description..."
     <title><%= HTML_TITLE %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <%= partial "partials/meta", :locals => {:meta_keywords => "keywords...", :meta_description => "description..."} %>
+    <%= partial "partials/meta", :locals => {:meta_keywords => "devpod, development, developer, podcast, türkçe, istanbul, türkiye, dev, ruby, python, php, perl, c, objective-c", :meta_description => HTML_DESCRIPTION} %>
     <%= partial "partials/open_graph", :locals => { :html_title => HTML_TITLE, :html_description => HTML_DESCRIPTION } %>
     <%= partial "partials/icons" %>
     <%= partial "partials/html_shim" %>
@@ -22,7 +22,9 @@ HTML_DESCRIPTION = "Description..."
     <%= yield_content :css %>
   </head>
   <body>
+
     <%= yield %>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <%= javascript_include_tag 'retina-0.0.2' %>
