@@ -82,9 +82,13 @@ h2 {
   }
 
   ul {
+    color: darken($devpod-yellow, 40);
     list-style: none;
     margin: 0;
     padding: 0;
+    li {
+      padding: 2px 0;
+    }
   }
 
   a.btn {
