@@ -7,6 +7,7 @@ HTML_DESCRIPTION = "Türkçe kaynak yok diyenlere müjde! Türkçe podcast! Aç�
   <head>
     <meta charset="utf-8">
     <title><%= HTML_TITLE %></title>
+    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <%= partial "partials/meta", :locals => {:meta_keywords => "devpod, development, developer, podcast, türkçe, istanbul, türkiye, dev, ruby, python, php, perl, c, objective-c", :meta_description => HTML_DESCRIPTION} %>

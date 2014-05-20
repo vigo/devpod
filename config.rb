@@ -2,6 +2,7 @@ require 'stringex'
 require 'time'
 
 require "lib/custom_helpers"
+require 'sanitize'
 
 helpers CustomHelpers
 
@@ -17,6 +18,7 @@ activate :blog do |blog|
   blog.summary_separator = /READ_MORE/
   blog.taglink = "etiket/{tag}.html"
   blog.tag_template = "tag.html"
+  blog.calendar_template = "calendar.html"
 end
 
 activate :directory_indexes
@@ -33,6 +35,8 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
 end
+
+page "/feed.xml", layout: false
 
 # activate :deploy do |deploy|
 #   deploy.build_before = true
