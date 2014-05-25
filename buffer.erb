@@ -477,3 +477,214 @@
       </div>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////// v1
+////////////////// index
+
+<div class="block">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <%= partial "partials/logo_part" %>
+
+                <h3>Arşiv</h3>
+                <p id="archive-area">
+                <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+                  <span class="label label-danger"><%= link_to "#{year} (#{articles.size} kayıt)", blog_year_path(year), :target => "_self" %></span>
+                <% end %>
+                </p>
+
+            </div>
+            <div class="col-sm-7">
+                <h1>devPod<small>Türkçe Developer Podcast</small></h1>
+                <p class="lead">
+                  <strong>Mayıs 2012</strong>&rsquo;den beri ara ara yayınına devam eden kendi meşrebinde bir podcast!
+                  Modern yazılım teknolojileri, popüler kütüphaneler, yazılım dilleri, konferanslar,
+                  iOS ve MacOS gibi konular içerir.
+                </p>
+
+                <% if paginate && page_number > 1%>
+                <h3>Sayfa: <%= page_number %></h3>
+                <% end %>
+
+                <ul class="list-unstyled list-general">
+                    <%
+                    page_articles.each_with_index do |article, i|
+                      file_size = Filesize.from("#{article.metadata[:page]['length']} B").to_s("Mb")
+                      concat '<li>'
+                        concat link_to '<i class="fa fa-download"></i>', article.metadata[:page]['download'], :class => "btn btn-primary btn-xs pull-right", :title => "İndirmek için tıkla: #{file_size}"
+                        concat link_to article.title, article, :target => "_self", :title => "Bölüm notları ve detaylar için tıklayın"
+                      concat '</li>'
+                    end
+                    %>
+                </ul>
+                <%= custom_pager :paginate => paginate,
+                                 :num_pages => num_pages,
+                                 :current_page => page_number,
+                                 :prev_page => prev_page,
+                                 :next_page => next_page,
+                                 :url_home => "/",
+                                 :url_schema => "/sayfa/%d/"
+                %>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+////////////////////// v1
+////////////////////// blog layout
+
+<div class="block">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <%= partial "partials/logo_part" %>
+                <p>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-text="devPod : <%= current_page.title %>" data-via="podcastmaster" data-lang="tr" data-size="large" data-hashtags="devpod">Tweet</a>
+                    <script>
+                      !function(d,s,id){
+                        var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                        if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+                        fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                    </script>
+                </p>
+                <div class="hidden-xs">
+                    <p class="tag-area">
+                    <% current_page.tags.each do |tag| %>
+                      <span class="label label-info"><%= link_to tag, tag_path(tag) %></span>
+                    <% end %>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-7" id="episode-detail">
+
+                <h1><%= current_page.title %><small><%= I18n.localize(current_page.date, :format => "%e %B %Y, %A, saat %H:%M") %></small></h1>
+                <p>
+                    <% file_size = Filesize.from("#{current_page.metadata[:page]['length']} B").to_s("Mb") %>
+                    <a href="<%= current_page.metadata[:page]['download'] %>" class="btn btn-primary"><i class="fa fa-download"></i> İndir [ <%= file_size %> ]</a>
+                </p>
+
+                <div id="markdown-content">
+                    <%= yield %>
+                    <div class="visible-xs">
+                        <h3>Etiketler</h3>
+                        <p class="tag-area">
+                        <% current_page.tags.each do |tag| %>
+                          <span class="label label-info"><%= link_to tag, tag_path(tag) %></span>
+                        <% end %>
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="block">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <%= partial "partials/logo_part" %>
+            </div>
+            <div class="col-sm-7" id="episode-detail">
+                <h1>&ldquo;<%= tagname %>&rdquo; ile etiketli<small>(<%= articles.count %> kayıt)</small></h1>
+                <ul class="list-unstyled list-general">
+                    <%
+                    page_articles.each_with_index do |article, i|
+                        file_size = Filesize.from("#{article.metadata[:page]['length']} B").to_s("Mb")
+                        concat '<li>'
+                            concat link_to '<i class="fa fa-download"></i>', article.metadata[:page]['download'], :class => "btn btn-primary btn-xs pull-right", :title => "İndirmek için tıkla: #{file_size}"
+                            concat link_to article.title, article, :target => "_self", :title => "Bölüm notları ve detaylar için tıklayın"
+                        concat '</li>'
+                    end
+                    %>
+                </ul>
+                <%= custom_pager :paginate => paginate,
+                                 :num_pages => num_pages,
+                                 :current_page => page_number,
+                                 :prev_page => prev_page,
+                                 :next_page => next_page,
+                                 :url_home => "/etiket/#{tagname}/",
+                                 :url_schema => "/etiket/#{tagname}/sayfa/%d/"
+                %>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="block">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <%= partial "partials/logo_part" %>
+            </div>
+            <div class="col-sm-7" id="episode-detail">
+                <h1>&ldquo;<%= year %>&rdquo; Yılında devPod<small>(<%= articles.count %> kayıt)</small></h1>
+                <ul class="list-unstyled list-general">
+                    <%
+                    page_articles.each_with_index do |article, i|
+                        file_size = Filesize.from("#{article.metadata[:page]['length']} B").to_s("Mb")
+                        concat '<li>'
+                            concat link_to '<i class="fa fa-download"></i>', article.metadata[:page]['download'], :class => "btn btn-primary btn-xs pull-right", :title => "İndirmek için tıkla: #{file_size}"
+                            concat link_to article.title, article, :target => "_self", :title => "Bölüm notları ve detaylar için tıklayın"
+                        concat '</li>'
+                    end
+                    %>
+                </ul>
+                <%= custom_pager :paginate => paginate,
+                                 :num_pages => num_pages,
+                                 :current_page => page_number,
+                                 :prev_page => prev_page,
+                                 :next_page => next_page,
+                                 :url_home => "/#{year}/",
+                                 :url_schema => "/#{year}/sayfa/%d/"
+                %>
+
+            </div>
+        </div>
+    </div>
+</div>

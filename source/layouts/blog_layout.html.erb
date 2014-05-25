@@ -1,8 +1,18 @@
 <% wrap_layout :layout do %>
+<%
+file_size = Filesize.from("#{current_page.metadata[:page]['length']} B").to_s("Mb")
+file_download = current_page.metadata[:page]['download']
+
+icon_download = '<i class="fa fa-download"></i>'
+icon_home = '<i class="fa fa-home"></i>'
+
+time_data = current_page.date.strftime('%Y-%m-%d %H:%M:%S')
+i18n_date = I18n.localize(current_page.date, :format => "%e %B %Y, %A, saat %H:%M")
+%>
 <div class="block">
     <div class="container">
         <div class="row">
-            <div class="col-sm-5">
+            <div class="col-sm-4">
                 <%= partial "partials/logo_part" %>
                 <p>
                     <a href="https://twitter.com/share" class="twitter-share-button" data-text="devPod : <%= current_page.title %>" data-via="podcastmaster" data-lang="tr" data-size="large" data-hashtags="devpod">Tweet</a>
@@ -13,38 +23,33 @@
                         fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
                     </script>
                 </p>
-                <div class="hidden-xs">
-                    <p class="tag-area">
-                    <% current_page.tags.each do |tag| %>
-                      <span class="label label-info"><%= link_to tag, tag_path(tag) %></span>
-                    <% end %>
-                    </p>
-                </div>
             </div>
-            <div class="col-sm-7" id="episode-detail">
 
-                <h1><%= current_page.title %><small><%= I18n.localize(current_page.date, :format => "%e %B %Y, %A, saat %H:%M") %></small></h1>
-                <p>
-                    <% file_size = Filesize.from("#{current_page.metadata[:page]['length']} B").to_s("Mb") %>
-                    <a href="<%= current_page.metadata[:page]['download'] %>" class="btn btn-primary"><i class="fa fa-download"></i> İndir [ <%= file_size %> ]</a>
-                </p>
+            <div class="col-sm-8">
+                <div id="episode-detail">
+                    <h1><a href="<%= current_page.url %>" target="_self"><%= current_page.title %></a></h1>
+                    <p>
+                        <time datetime="<%= time_data %>"><%= i18n_date %></time>
+                    </p>
+                    <p>
+                        <%= link_to "#{icon_home} Anasayfa", "/", :class => "btn btn-devpod", :target => "_self" %>
+                        <%= link_to "#{icon_download} İndir [ #{file_size} ]", file_download, :class => "btn btn-devpod", :target => "_self" %>
+                    </p>
 
-                <div id="markdown-content">
-                    <%= yield %>
-                    <div class="visible-xs">
+                    <div id="markdown-content">
+                        <%= yield %>
+
                         <h3>Etiketler</h3>
-                        <p class="tag-area">
+                        <p class="tags-area">
                         <% current_page.tags.each do |tag| %>
-                          <span class="label label-info"><%= link_to tag, tag_path(tag) %></span>
+                            <span class="label label-primary"><%= link_to tag, tag_path(tag) %></span>
                         <% end %>
                         </p>
                     </div>
+
                 </div>
-
-
             </div>
         </div>
     </div>
 </div>
-
 <% end %>

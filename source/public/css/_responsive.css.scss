@@ -1,78 +1,92 @@
-@media (min-width: 1200px) {
-  h1 {
-    margin-bottom: 1.2em;
-    font-size: 1.6em;
-    line-height: 1em;
-    small {
-      margin-top: .5em;
-    }
-  }
-
-  #episode-detail {
-    h3 { margin-bottom: 12px; }
-    p {
-      margin-bottom: 1.3em;
-    }
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  h1 { font-size: 1.6em; }
-  h3 { font-size: 1.2em; }
-  .lead { font-size: 1.2em; }
-
-  #episode-detail {
-      h1 { margin-bottom: 1em; }
-      p:first-of-type {
-        font-size: 1.3em;
-      }
-  }
-
-  #sidebar-logo {
-    .nav-pills > li {
-      float: none;
-    }
-    .nav > li > a {
-      padding: 0 0 1em 0;
-      i {
-        margin-right: 5px;
-        float: right !important;
-      }
-    }
-  }
-
-}
-
-
-// iPhone Vertical
-@media (max-width: 320px){
+@media (min-width: 320px) and (max-width: 580px){
   body {
-    // background-color: #eee;
+    font-size: 1.2em;
   }
-  .block {
-    padding: 0;
-  }
-
-  h1 { font-size: 1.8em; }
-  h3 { font-size: 1.2em; }
-
-  #episode-detail {
-    h1 {
-      font-size: 1.2em;
-      line-height: 1.2em;
-      margin-bottom: 1.5em;
-      small { margin-top: 5px; }
-    }
-    p:first-of-type {
-      font-size: 1.2em;
-      margin-bottom: 1.5em;
-    }
-  }
-
-  #sidebar-logo {
-    .nav > li > a {
-      padding: 0 .5em;
-      font-size: .85em;
-    }
+  .block { padding: 20px 0 0 0; }
+  .btn-devpod {
+    display: block;
+    margin-right: 0;
+    text-align: left;
+    margin-bottom: 1em;
+    i { margin-right: 1em; }
   }
 }
+
+// @media (min-width: 1200px) {
+//   h1 {
+//     margin-bottom: 1.2em;
+//     font-size: 1.6em;
+//     line-height: 1em;
+//     small {
+//       margin-top: .5em;
+//     }
+//   }
+//
+//   #episode-detail {
+//     h3 { margin-bottom: 12px; }
+//     p {
+//       margin-bottom: 1.3em;
+//     }
+//   }
+// }
+//
+// @media (min-width: 768px) and (max-width: 1024px) {
+//   h1 { font-size: 1.6em; }
+//   h3 { font-size: 1.2em; }
+//   .lead { font-size: 1.2em; }
+//
+//   #episode-detail {
+//       h1 { margin-bottom: 1em; }
+//       p:first-of-type {
+//         font-size: 1.3em;
+//       }
+//   }
+//
+//   #sidebar-logo {
+//     .nav-pills > li {
+//       float: none;
+//     }
+//     .nav > li > a {
+//       padding: 0 0 1em 0;
+//       i {
+//         margin-right: 5px;
+//         float: right !important;
+//       }
+//     }
+//   }
+//
+// }
+//
+//
+// // iPhone Vertical
+// @media (max-width: 320px){
+//   body {
+//     // background-color: #eee;
+//   }
+//   .block {
+//     padding: 0;
+//   }
+//
+//   h1 { font-size: 1.8em; }
+//   h3 { font-size: 1.2em; }
+//
+//   #episode-detail {
+//     h1 {
+//       font-size: 1.2em;
+//       line-height: 1.2em;
+//       margin-bottom: 1.5em;
+//       small { margin-top: 5px; }
+//     }
+//     p:first-of-type {
+//       font-size: 1.2em;
+//       margin-bottom: 1.5em;
+//     }
+//   }
+//
+//   #sidebar-logo {
+//     .nav > li > a {
+//       padding: 0 .5em;
+//       font-size: .85em;
+//     }
+//   }
+// }

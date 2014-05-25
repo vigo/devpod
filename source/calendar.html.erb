@@ -1,17 +1,34 @@
 ---
 pageable: true
-per_page: 10
+per_page: 2
 ---
+<%
+icon_home = '<i class="fa fa-home"></i>'
+%>
 <div class="block">
     <div class="container">
         <div class="row">
-            <div class="col-sm-5">
+            <div class="col-sm-4">
                 <%= partial "partials/logo_part" %>
+                <p>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-text="devPod : <%= year %> arşivi" data-via="podcastmaster" data-lang="tr" data-size="large" data-hashtags="devpod">Tweet</a>
+                    <script>
+                      !function(d,s,id){
+                        var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                        if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+                        fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                    </script>
+                </p>
+
             </div>
-            <div class="col-sm-7" id="episode-detail">
-                <h1>&ldquo;<%= year %>&rdquo; Yılında devPod<small>(<%= articles.count %> kayıt)</small></h1>
-                <ul class="list-unstyled list-general">
+            <div class="col-sm-8" id="year-detail">
+                <p><%= link_to "#{icon_home} Anasayfa", "/", :class => "btn btn-devpod", :target => "_self" %></p>
+                <h1><span class="label label-primary"><%= year %></span> [ <strong><%= articles.count %></strong> kayıt... ]</h1>
+                <ul class="list-unstyled list-devpod">
                     <%
+                    if paginate && page_number > 1
+                        concat "<li class=\"page-number\">Sayfa: #{page_number}</li>"
+                    end
                     page_articles.each_with_index do |article, i|
                         file_size = Filesize.from("#{article.metadata[:page]['length']} B").to_s("Mb")
                         concat '<li>'
@@ -29,7 +46,6 @@ per_page: 10
                                  :url_home => "/#{year}/",
                                  :url_schema => "/#{year}/sayfa/%d/"
                 %>
-
             </div>
         </div>
     </div>

@@ -5,39 +5,48 @@ per_page: 10
 <div class="block">
     <div class="container">
         <div class="row">
-            <div class="col-sm-5">
+            <div class="col-sm-4">
                 <%= partial "partials/logo_part" %>
 
-                <h3>Arşiv</h3>
-                <p id="archive-area">
-                <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-                  <span class="label label-danger"><%= link_to "#{year} (#{articles.size} kayıt)", blog_year_path(year), :target => "_self" %></span>
-                <% end %>
+                <p class="archives">
+                    <strong>Arşiv [ <%= blog.articles.size %> ]</strong><% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+                        <%= link_to "» #{year}: [ #{articles.size} kayıt ]", blog_year_path(year), :target => "_self" %>
+                    <% end %>
                 </p>
-
             </div>
-            <div class="col-sm-7">
-                <h1>devPod<small>Türkçe Developer Podcast</small></h1>
+            <div class="col-sm-8">
                 <p class="lead">
-                  <strong>Mayıs 2012</strong>&rsquo;den beri ara ara yayınına devam eden kendi meşrebinde bir podcast!
-                  Modern yazılım teknolojileri, popüler kütüphaneler, yazılım dilleri, konferanslar,
-                  iOS ve MacOS gibi konular içerir.
+                    <strong>Mayıs 2012</strong>&rsquo;den beri ara ara yayınına devam eden kendi meşrebinde bir podcast!
+                    Modern yazılım teknolojileri, popüler kütüphaneler, yazılım dilleri, konferanslar, Linux,
+                    Unix, iOS, MacOS, Python, Ruby, Git gibi konular içerir.
                 </p>
+                <%
+                icon_twitter = '<i class="fa fa-twitter-square"></i>'
+                icon_facebook = '<i class="fa fa-facebook-square"></i>'
+                icon_itunes = '<i class="fa fa-rss-square"></i>'
+                icon_bulletion = '<i class="fa fa-envelope-square"></i>'
+                %>
+                <p>
+                    <%= link_to "#{icon_twitter} Twitter", "https://twitter.com/podcastmaster", :class => "btn btn-devpod" %>
+                    <%= link_to "#{icon_facebook} Facebook", "https://www.facebook.com/devpod", :class => "btn btn-devpod" %>
+                    <%= link_to "#{icon_itunes} iTunes", "http://bit.ly/devpod-itunes", :class => "btn btn-devpod" %>
+                    <%= link_to "#{icon_bulletion} Bülten", "http://eepurl.com/NumbP", :class => "btn btn-devpod" %>
+                </p>
+                <hr/>
 
-                <% if paginate && page_number > 1%>
-                <h3>Sayfa: <%= page_number %></h3>
-                <% end %>
-
-                <ul class="list-unstyled list-general">
-                    <%
-                    page_articles.each_with_index do |article, i|
-                      file_size = Filesize.from("#{article.metadata[:page]['length']} B").to_s("Mb")
-                      concat '<li>'
-                        concat link_to '<i class="fa fa-download"></i>', article.metadata[:page]['download'], :class => "btn btn-primary btn-xs pull-right", :title => "İndirmek için tıkla: #{file_size}"
-                        concat link_to article.title, article, :target => "_self", :title => "Bölüm notları ve detaylar için tıklayın"
-                      concat '</li>'
-                    end
-                    %>
+                <ul class="list-unstyled list-devpod">
+                <%
+                if paginate && page_number > 1
+                    concat "<li class=\"page-number\">Sayfa: #{page_number}</li>"
+                end
+                page_articles.each_with_index do |article, i|
+                  file_size = Filesize.from("#{article.metadata[:page]['length']} B").to_s("Mb")
+                  concat '<li>'
+                    concat link_to '<i class="fa fa-download"></i>', article.metadata[:page]['download'], :class => "btn btn-primary btn-xs pull-right", :title => "İndirmek için tıkla: #{file_size}"
+                    concat link_to article.title, article, :target => "_self", :title => "Bölüm notları ve detaylar için tıklayın"
+                  concat '</li>'
+                end
+                %>
                 </ul>
                 <%= custom_pager :paginate => paginate,
                                  :num_pages => num_pages,
@@ -47,6 +56,7 @@ per_page: 10
                                  :url_home => "/",
                                  :url_schema => "/sayfa/%d/"
                 %>
+
             </div>
         </div>
     </div>
