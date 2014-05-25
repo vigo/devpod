@@ -42,7 +42,7 @@ i18n_date = I18n.localize(current_page.date, :format => "%e %B %Y, %A, saat %H:%
                         <h3>Etiketler</h3>
                         <p class="tags-area">
                         <% current_page.tags.each do |tag| %>
-                            <span class="label label-primary"><%= link_to tag, tag_path(tag) %></span>
+                            <span class="label label-primary"><%= link_to tag, tag_path(tag), :target => "_self" %></span>
                         <% end %>
                         </p>
                     </div>

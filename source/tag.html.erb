@@ -31,9 +31,12 @@ icon_home = '<i class="fa fa-home"></i>'
                     end
                     page_articles.each_with_index do |article, i|
                         file_size = Filesize.from("#{article.metadata[:page]['length']} B").to_s("Mb")
+                        time_data = article.date.strftime('%Y-%m-%d %H:%M:%S')
+                        i18n_date = I18n.localize(article.date, :format => "%e %B %Y, %A, saat %H:%M")
+
                         concat '<li>'
                             concat link_to '<i class="fa fa-download"></i>', article.metadata[:page]['download'], :class => "btn btn-primary btn-xs pull-right", :title => "İndirmek için tıkla: #{file_size}"
-                            concat link_to article.title, article, :target => "_self", :title => "Bölüm notları ve detaylar için tıklayın"
+                            concat link_to "#{article.title}<time datetime=\"#{time_data}\">#{i18n_date}</time>", article, :target => "_self", :title => "Bölüm notları ve detaylar için tıklayın"
                         concat '</li>'
                     end
                     %>
