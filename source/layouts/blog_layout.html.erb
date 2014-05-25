@@ -13,13 +13,13 @@
                         fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
                     </script>
                 </p>
-
-                <h3>Etiketler</h3>
-                <p id="tag-area">
-                <% current_page.tags.each do |tag| %>
-                  <span class="label label-info"><%= link_to tag, tag_path(tag) %></span>
-                <% end %>
-                </p>
+                <div class="hidden-xs">
+                    <p class="tag-area">
+                    <% current_page.tags.each do |tag| %>
+                      <span class="label label-info"><%= link_to tag, tag_path(tag) %></span>
+                    <% end %>
+                    </p>
+                </div>
             </div>
             <div class="col-sm-7" id="episode-detail">
 
@@ -30,8 +30,18 @@
                 </p>
 
                 <div id="markdown-content">
-                  <%= yield %>
+                    <%= yield %>
+                    <div class="visible-xs">
+                        <h3>Etiketler</h3>
+                        <p class="tag-area">
+                        <% current_page.tags.each do |tag| %>
+                          <span class="label label-info"><%= link_to tag, tag_path(tag) %></span>
+                        <% end %>
+                        </p>
+                    </div>
                 </div>
+
+
             </div>
         </div>
     </div>
