@@ -1,3 +1,3 @@
 $(document).ready(function(){
-    // ready ...
+    $("#sidebar-logo > .nav a").attr("target", "_self");
 });

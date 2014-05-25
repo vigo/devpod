@@ -275,3 +275,205 @@
       </div>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////// blog layout
+
+<div class="block block-main" id="episode-detail">
+  <div class="container">
+      <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <%= partial "partials/logo_part" %>
+
+            <p>
+              <a href="https://twitter.com/share" class="twitter-share-button" data-text="devPod : <%= current_page.title %>" data-via="podcastmaster" data-lang="tr" data-size="large" data-hashtags="devpod">Tweet</a>
+              <script>
+                !function(d,s,id){
+                  var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                  if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+                  fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+              </script>
+
+            </p>
+
+            <p>
+              <% current_page.tags.each do |tag| %>
+                <span class="badge"><%= link_to tag, tag_path(tag) %></span>
+              <% end %>
+            </p>
+          </div>
+
+          <div class="col-xs-12 col-sm-7 col-sm-offset-1">
+
+            <ol class="breadcrumb">
+              <li><a href="/" target="_self">Anasayfa</a></li>
+              <li class="active"><%= current_page.title %></li>
+            </ol>
+
+            <h1><%= current_page.title %><small><%= I18n.localize(current_page.date, :format => "%e %B %Y, %A, saat %H:%M") %></small></h1>
+            <p><a class="btn btn-warning" href="<%= current_page.metadata[:page]['download'] %>"><i class="glyphicon glyphicon-download"></i> <%= current_page.metadata[:page]['size'] %></a></p>
+
+            <div id="markdown-content">
+              <%= yield %>
+            </div>
+
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="block block-main">
+  <div class="container">
+      <div class="row">
+
+          <div class="col-xs-12 col-sm-4">
+            <%= partial "partials/logo_part" %>
+          </div>
+
+          <div class="col-xs-12 col-sm-7 col-sm-offset-1">
+            <ol class="breadcrumb">
+              <li><a href="/" target="_self">Anasayfa</a></li>
+              <li class="active">Yıla Göre</li>
+            </ol>
+
+            <h2>Yıl "<strong><%= year %></strong>" ( <%= articles.count %> )</h2>
+
+            <ul class="list-unstyled list-last-episodes">
+              <% page_articles.each_with_index do |article, i| %>
+                <li>
+                  <h4>
+                    <%= link_to article.title, article, :target => "_self", :title => "Bölüm notları ve detaylar için tıklayın" %>
+                    <small><%= I18n.localize(article.date, :format => "%B %e / %Y") %></small>
+                  </h4>
+                  <p><a class="btn btn-warning" href="<%= article.metadata[:page]['download'] %>"><i class="glyphicon glyphicon-download"></i> <%= article.metadata[:page]['size'] %></a></p>
+                  <p><%= article.summary %></p>
+                </li>
+              <% end %>
+            </ul>
+
+              <% if paginate && num_pages > 1 %>
+              <ul class="pagination pagination-episodes">
+                <% if prev_page %>
+                  <li class="previous"><%= link_to '&larr;', prev_page, :target => "_self" %></li>
+                <% else %>
+                  <li class="previous disabled"><%= link_to '&larr;', "" %></li>
+                <% end %>
+              <%
+                (1..num_pages).each do |n|
+                  link_class = ""
+                  p_link = "/#{year}/"
+                  p_link = "/#{year}/page/#{n}/" if n > 1
+                  link_class = "active" if n == page_number
+                %>
+                <li class="<%= link_class %>"><%= link_to n, p_link, :target => "_self" %></li>
+              <% end %>
+              <% if next_page %>
+                <li class="next"><%= link_to '&rarr;', next_page, :target => "_self" %></li>
+              <% else %>
+                <li class="next disabled"><%= link_to '&rarr;', "" %></li>
+              <% end %>
+              </ul>
+            <% end %>
+
+
+          </div>
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="block block-main">
+  <div class="container">
+      <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <%= partial "partials/logo_part" %>
+          </div>
+
+          <div class="col-xs-12 col-sm-7 col-sm-offset-1">
+
+            <ol class="breadcrumb">
+              <li><a href="/" target="_self">Anasayfa</a></li>
+              <li class="active">Etiket: <%= tagname %></li>
+            </ol>
+
+            <h2>Etiket "<strong><%= tagname %></strong>" ( <%= articles.count %> )</h2>
+
+            <ul class="list-unstyled list-last-episodes">
+              <% page_articles.each_with_index do |article, i| %>
+                <li>
+                  <h4>
+                    <%= link_to article.title, article, :target => "_self", :title => "Bölüm notları ve detaylar için tıklayın" %>
+                    <small><%= I18n.localize(article.date, :format => "%B %e / %Y") %></small>
+                  </h4>
+                  <p><a class="btn btn-warning" href="<%= article.metadata[:page]['download'] %>"><i class="glyphicon glyphicon-download"></i> <%= article.metadata[:page]['size'] %></a></p>
+                  <p><%= article.summary %></p>
+                </li>
+              <% end %>
+            </ul>
+
+            <% if paginate && num_pages > 1 %>
+              <ul class="pagination pagination-episodes">
+                <% if prev_page %>
+                  <li class="previous"><%= link_to '&larr;', prev_page, :target => "_self" %></li>
+                <% else %>
+                  <li class="previous disabled"><%= link_to '&larr;', "" %></li>
+                <% end %>
+              <%
+                (1..num_pages).each do |n|
+                  link_class = ""
+                  p_link = "/etiket/#{tagname}/"
+                  p_link = "/etiket/#{tagname}/page/#{n}/" if n > 1
+                  link_class = "active" if n == page_number
+                %>
+                <li class="<%= link_class %>"><%= link_to n, p_link, :target => "_self" %></li>
+              <% end %>
+              <% if next_page %>
+                <li class="next"><%= link_to '&rarr;', next_page, :target => "_self" %></li>
+              <% else %>
+                <li class="next disabled"><%= link_to '&rarr;', "" %></li>
+              <% end %>
+              </ul>
+            <% end %>
+
+
+          </div>
+      </div>
+  </div>
+</div>

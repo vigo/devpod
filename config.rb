@@ -16,6 +16,8 @@ activate :blog do |blog|
   blog.taglink = "etiket/{tag}.html"
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
+  blog.page_link = "sayfa/{num}"
+  # blog.year_link = ""
 end
 
 activate :directory_indexes

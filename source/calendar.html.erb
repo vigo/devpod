@@ -2,62 +2,35 @@
 pageable: true
 per_page: 10
 ---
-<div class="block block-main">
-  <div class="container">
-      <div class="row">
-
-          <div class="col-xs-12 col-sm-4">
-            <%= partial "partials/logo_part" %>
-          </div>
-
-          <div class="col-xs-12 col-sm-7 col-sm-offset-1">
-            <ol class="breadcrumb">
-              <li><a href="/" target="_self">Anasayfa</a></li>
-              <li class="active">Yıla Göre</li>
-            </ol>
-
-            <h2>Yıl "<strong><%= year %></strong>" ( <%= articles.count %> )</h2>
-
-            <ul class="list-unstyled list-last-episodes">
-              <% page_articles.each_with_index do |article, i| %>
-                <li>
-                  <h4>
-                    <%= link_to article.title, article, :target => "_self", :title => "Bölüm notları ve detaylar için tıklayın" %>
-                    <small><%= I18n.localize(article.date, :format => "%B %e / %Y") %></small>
-                  </h4>
-                  <p><a class="btn btn-warning" href="<%= article.metadata[:page]['download'] %>"><i class="glyphicon glyphicon-download"></i> <%= article.metadata[:page]['size'] %></a></p>
-                  <p><%= article.summary %></p>
-                </li>
-              <% end %>
-            </ul>
-
-              <% if paginate && num_pages > 1 %>
-              <ul class="pagination pagination-episodes">
-                <% if prev_page %>
-                  <li class="previous"><%= link_to '&larr;', prev_page, :target => "_self" %></li>
-                <% else %>
-                  <li class="previous disabled"><%= link_to '&larr;', "" %></li>
-                <% end %>
-              <%
-                (1..num_pages).each do |n|
-                  link_class = ""
-                  p_link = "/#{year}/"
-                  p_link = "/#{year}/page/#{n}/" if n > 1
-                  link_class = "active" if n == page_number
+<div class="block">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <%= partial "partials/logo_part" %>
+            </div>
+            <div class="col-sm-7" id="episode-detail">
+                <h1>&ldquo;<%= year %>&rdquo; Yılında devPod<small>(<%= articles.count %> kayıt)</small></h1>
+                <ul class="list-unstyled list-general">
+                    <%
+                    page_articles.each_with_index do |article, i|
+                        file_size = Filesize.from("#{article.metadata[:page]['length']} B").to_s("Mb")
+                        concat '<li>'
+                            concat link_to '<i class="fa fa-download"></i>', article.metadata[:page]['download'], :class => "btn btn-primary btn-xs pull-right", :title => "İndirmek için tıkla: #{file_size}"
+                            concat link_to article.title, article, :target => "_self", :title => "Bölüm notları ve detaylar için tıklayın"
+                        concat '</li>'
+                    end
+                    %>
+                </ul>
+                <%= custom_pager :paginate => paginate,
+                                 :num_pages => num_pages,
+                                 :current_page => page_number,
+                                 :prev_page => prev_page,
+                                 :next_page => next_page,
+                                 :url_home => "/#{year}/",
+                                 :url_schema => "/#{year}/sayfa/%d/"
                 %>
-                <li class="<%= link_class %>"><%= link_to n, p_link, :target => "_self" %></li>
-              <% end %>
-              <% if next_page %>
-                <li class="next"><%= link_to '&rarr;', next_page, :target => "_self" %></li>
-              <% else %>
-                <li class="next disabled"><%= link_to '&rarr;', "" %></li>
-              <% end %>
-              </ul>
-            <% end %>
 
-
-          </div>
-
-      </div>
-  </div>
+            </div>
+        </div>
+    </div>
 </div>
