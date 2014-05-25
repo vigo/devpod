@@ -135,3 +135,23 @@ p {
   }
   a { display: block; }
 }
+
+.footer {
+  text-align: center;
+  background-color: #555;
+  color: white;
+  a {
+    color: inherit;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  a:after {
+    content: ' \2022 ';
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  a:last-child:after {
+    content: '';
+  }
+}
