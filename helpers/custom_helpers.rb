@@ -1,0 +1,46 @@
+module CustomHelpers
+  def custom_pager(**options)
+    output = []
+    # paginate =
+    # num_pages =
+    # current_page =
+    # prev_page =
+    # next_page = options[:next_page]
+    # url_home = options[:url_home]
+    # url_schema = options[:url_schema]
+
+    if options[:paginate] && options[:num_pages] > 1
+      output << '<ul class="pagination">'
+
+      if options[:prev_page]
+        li_class = "previous"
+        a_link = link_to "&larr;", options[:prev_page], :target => "_self"
+      else
+        li_class = "previous disabled"
+        a_link = link_to "&larr;", ""
+      end
+      output << "<li class=\"#{li_class}\">#{a_link}</li>"
+
+      (1..options[:num_pages]).each do |n|
+        li_class = ""
+        li_class = "active" if n == options[:current_page]
+        a_link = options[:url_home]
+        a_link = options[:url_schema] % n if n > 1
+
+        output << "<li class=\"#{li_class}\">#{link_to n, a_link, :target => '_self'}</li>"
+      end
+
+      if options[:next_page]
+        li_class = "next"
+        a_link = link_to "&rarr;", options[:next_page], :target => "_self"
+      else
+        li_class = "next disabled"
+        a_link = link_to "&rarr;", ""
+      end
+      output << "<li class=\"#{li_class}\">#{a_link}</li>"
+
+      output << '</ul>'
+    end
+    output.join("\n")
+  end
+end

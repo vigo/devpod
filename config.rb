@@ -1,10 +1,7 @@
 require 'stringex'
 require 'time'
-
-require "lib/custom_helpers"
 require 'sanitize'
-
-helpers CustomHelpers
+require 'filesize'
 
 activate :i18n
 

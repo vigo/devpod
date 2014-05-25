@@ -1,26 +1,24 @@
-@for $i from 0 through 6 {
-  .dbg#{$i+1} { background-color: darken(yellow, 3 * $i); }
-  h#{$i+1} {
-    margin: 0 0 .5em 0;
-    padding: 0;
-  }
-}
-
 body {
   background-color: $site-global-bg;
   color: $site-global-fg;
+  font-family: 'Helvetica Neue';
 }
 
-p {
-  margin-bottom: 20px;
-}
-
-.block {
-  padding: 50px 0;
-}
-
-.block-main {
-  background-color: lighten($devpod-yellow, 20);
+@for $i from 0 through 6 {
+  .dbg#{$i+1} { background-color: darken(yellow, 3 * $i); }
+  h#{$i+1} {
+    @include clearfix;
+    margin: 0 0 .5em 0;
+    padding: 0;
+    font-family: inherit;
+    font-weight: 600;
+    color: red;
+    small {
+      display: block;
+      font-weight: inherit;
+      color: $devpod-green;
+    }
+  }
 }
 
 img {
@@ -28,105 +26,128 @@ img {
   height: auto;
 }
 
-h1, h2 {
-  color: red;
+strong {
+  color: $site-strong-fg;
+  font-weight: 600;
 }
 
-h2 {
-  border-bottom: 2px solid red;
-  margin-bottom: 1em;
+.block {
+  padding: 50px 0;
 }
 
-.list-last-episodes {
-  h4 > a {
-    color: darken($devpod-yellow, 30);
-    font-weight: 500;
-  }
-  small {
-    float: right;
-    color: darken($devpod-yellow, 40);
+.list-general {
+  a {
+    font-weight: 600;
   }
   li {
-    padding: 0 0 1em 0;
-    margin-bottom: 1em;
-    border-bottom: 1px solid lighten($devpod-yellow, 10);
-  }
-  .badge {
-    a {
-      color: yellow;
-    }
+    padding: .75em 0;
+    border-bottom: 1px solid lighten($site-link-fg, 35);
   }
 }
 
-#episode-detail {
 
-  #markdown-content > p {
-    font-size: 1.5em;
-    font-weight: 200;
-  }
-
-  h1 {
-    small {
-      display: block;
-      color: lighten(red, 20);
-    }
-  }
-
-  h3 {
-    color: darken($devpod-yellow, 20);
-    border-bottom: 2px solid darken($devpod-yellow, 20);
-  }
-
-  a {
-    color: darken($devpod-yellow, 30);
-  }
-
-  ul {
-    color: darken($devpod-yellow, 40);
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    li {
-      padding: 2px 0;
-    }
-  }
-
-  a.btn {
-    color: white;
-  }
-
-  .badge {
-    a {
-      color: yellow;
-    }
-  }
-
-
-}
-
-.pagination-episodes {
-  border-radius: 0;
-  li > a { color: red; }
-  .active > a {
-    background-color: red;
-    border-color: red;
-    &:hover {
-      background-color: lighten(red, 20);
-      border-color: lighten(red, 20);
-    }
-  }
-  li:first-child > a { border-radius: 0; }
-  li:last-child > a { border-radius: 0; }
-}
-
-.breadcrumb {
-  a { color: red; }
-}
-
-#archive-by-year {
-  h3 {
-    color: red;
-    border-bottom: 2px solid red;
-  }
-  a { color: red; }
-}
+// h2 {
+//   border-bottom: 2px solid red;
+//   margin-bottom: 1em;
+// }
+//
+// .list-last-episodes {
+//   a { color: darken($devpod-yellow, 30); }
+//   .btn-warning {
+//     color: white;
+//   }
+//   h4 > a {
+//     color: darken($devpod-yellow, 30);
+//     font-weight: 500;
+//   }
+//   small {
+//     float: right;
+//     color: darken($devpod-yellow, 40);
+//   }
+//   li {
+//     padding: 0 0 1em 0;
+//     margin-bottom: 1em;
+//     border-bottom: 1px solid lighten($devpod-yellow, 10);
+//   }
+//   .badge {
+//     margin: 0 5px 5px 0;
+//     a {
+//       color: yellow;
+//     }
+//   }
+//
+// }
+//
+// #episode-detail {
+//
+//   #markdown-content > p:first-child {
+//     font-size: 1.5em;
+//     font-weight: 200;
+//   }
+//
+//   h1 {
+//     small {
+//       display: block;
+//       color: lighten(red, 20);
+//     }
+//   }
+//
+//   h3 {
+//     color: darken($devpod-yellow, 20);
+//     border-bottom: 2px solid darken($devpod-yellow, 20);
+//   }
+//
+//   a {
+//     color: darken($devpod-yellow, 30);
+//   }
+//
+//   ul {
+//     color: darken($devpod-yellow, 40);
+//     list-style: none;
+//     margin: 0 0 1em 0;
+//     padding: 0;
+//     li {
+//       padding: 2px 0;
+//     }
+//   }
+//
+//   a.btn {
+//     color: white;
+//   }
+//
+//   .badge {
+//     margin: 0 5px 5px 0;
+//     a {
+//       color: yellow;
+//     }
+//   }
+//
+//
+// }
+//
+// .pagination-episodes {
+//   border-radius: 0;
+//   li > a { color: red; }
+//   .active > a {
+//     background-color: red;
+//     border-color: red;
+//     &:hover {
+//       background-color: lighten(red, 20);
+//       border-color: lighten(red, 20);
+//     }
+//   }
+//   li:first-child > a { border-radius: 0; }
+//   li:last-child > a { border-radius: 0; }
+// }
+//
+// .breadcrumb {
+//   a { color: red; }
+// }
+//
+// #archive-by-year {
+//   h3 {
+//     color: red;
+//     border-bottom: 2px solid red;
+//   }
+//   a { color: red; }
+// }

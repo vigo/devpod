@@ -22,6 +22,7 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.9.3)
+    filesize (0.0.3)
     fssm (0.2.10)
     haml (4.0.5)
       tilt
@@ -118,6 +119,7 @@ PLATFORMS
 
 DEPENDENCIES
   builder (~> 3.0)
+  filesize
   middleman (~> 3.2.2)
   middleman-blog
   middleman-deploy
