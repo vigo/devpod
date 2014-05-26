@@ -8,7 +8,7 @@ per_page: 10
             <div class="col-sm-4">
                 <%= partial "partials/logo_part" %>
 
-                <p class="archives">
+                <p class="archives hidden-xs">
                     <strong>Arşiv [ <%= blog.articles.size %> ]</strong><% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
                         <%= link_to "» #{year}: [ #{articles.size} kayıt ]", blog_year_path(year), :target => "_self" %>
                     <% end %>
@@ -62,6 +62,12 @@ per_page: 10
                                  :url_home => "/",
                                  :url_schema => "/sayfa/%d/"
                 %>
+
+                <p class="archives visible-xs">
+                    <strong>Arşiv [ <%= blog.articles.size %> ]</strong><% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+                        <%= link_to "» #{year}: [ #{articles.size} kayıt ]", blog_year_path(year), :target => "_self" %>
+                    <% end %>
+                </p>
 
             </div>
         </div>

@@ -23,7 +23,8 @@ icon_home = '<i class="fa fa-home"></i>'
             </div>
             <div class="col-sm-8" id="tag-detail">
                 <p><%= link_to "#{icon_home} Anasayfa", "/", :class => "btn btn-devpod", :target => "_self" %></p>
-                <h1><span class="label label-primary"><%= tagname %></span> [ <strong><%= articles.count %></strong> kayıt... ]</h1>
+                <h1><strong><%= tagname %></strong> içeren <%= articles.count %> kayıt var ...</h1>
+                <hr/>
                 <ul class="list-unstyled list-devpod">
                     <%
                     if paginate && page_number > 1

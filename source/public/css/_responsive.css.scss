@@ -2,13 +2,53 @@
   body {
     font-size: 1.2em;
   }
-  .block { padding: 20px 0 0 0; }
+  .block { padding: 20px 0; }
   .btn-devpod {
     display: block;
     margin-right: 0;
     text-align: left;
     margin-bottom: 1em;
     i { margin-right: 1em; }
+  }
+  .list-devpod {
+    font-size: 1.3em;
+    a.pull-right { margin-left: 1em; }
+    li {
+      time { font-size: .85em; }
+    }
+  }
+
+  #episode-detail {
+    h1, h3 { font-size: 1.3em; }
+    h3 {
+      padding-bottom: 0;
+      margin-bottom: .2em;
+    }
+  }
+
+  #markdown-content {
+    ul {
+      font-size: 1.2em;
+    }
+  }
+
+  .archives {
+    a { font-size: 1.3em; margin-bottom: .2em; }
+  }
+
+  #tag-detail,
+  #year-detail {
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+
+  .tags-area {
+    span {
+      display: inline-block;
+      font-size: 1.2em;
+      margin: 5px 5px 5px 0;
+    }
   }
 }
 
