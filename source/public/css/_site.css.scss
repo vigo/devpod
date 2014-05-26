@@ -28,13 +28,13 @@ p {
 
 #logo {
   // background-color: lighten($devpod-yellow, 10);
-  background-color: black;
+  background-color: #eee;
   padding: 2em 2em .2em 2em;
   margin-bottom: 1em;
   img { margin-bottom: 1em; }
   text-align: center;
   // color: $devpod-green;
-  color: white;
+  color: $devpod-red;
   font-weight: 600;
 }
 
@@ -68,9 +68,10 @@ p {
 
 #episode-detail {
   h1 {
-    background-color: black;
+    background-color: $markdown-lead;
     color: white;
     margin: 0;
+    padding: 10px;
     a {
       color: inherit;
       &:hover {
@@ -79,22 +80,23 @@ p {
       }
     }
   }
+  time { color: $markdown-lead; }
 }
 
 #markdown-content {
   h3 {
     font-weight: 600;
-    // color: $markdown-lead;
-    color: black;
-    border-bottom: 2px solid black;
-    // border-bottom: 2px solid $markdown-lead;
+    color: $markdown-lead;
+    // color: black;
+    // border-bottom: 2px solid black;
+    border-bottom: 2px solid $markdown-lead;
   }
   p:first-of-type {
     // background-color: $markdown-lead;
     background-color: #ddd;
     color: black;
     // color: white;
-    padding: 1em;
+    padding: 10px;
     margin-top: 1.3em;
     font-size: 1.6em;
     font-weight: 400;
@@ -129,9 +131,11 @@ p {
   margin-bottom: 1em;
   strong {
     display: block;
-    padding-bottom: 0;
+    padding: 0 0 0 .5em;
     margin-bottom: .4em;
-    border-bottom: 2px solid black;
+    color: $markdown-lead;
+    font-size: 1.4em;
+    border-bottom: 2px solid $markdown-lead;
   }
   a { display: block; }
 }
