@@ -4,7 +4,7 @@ Türkçe developer podcast resmii websitesi!
 
 # Kurulum
 
-Öncelikle `ruby 2.1.0` kurulu olmalı (`rvm` ya da `rbenv`)
+Öncelikle `ruby 2.2.2` kurulu olmalı (`rvm` ya da `rbenv`)
 
     bundle install --path vendor/bundle
     bundle exec middleman
