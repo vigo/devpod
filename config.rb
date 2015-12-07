@@ -11,6 +11,7 @@ I18n.default_locale = :tr
 Time.zone = "Europe/Istanbul"
 
 activate :blog do |blog|
+  blog.sources = "posts/{year}-{month}-{day}-{title}.html"
   blog.paginate = true
   blog.layout = "blog_layout"
   blog.summary_separator = /READ_MORE/
