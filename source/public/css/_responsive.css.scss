@@ -1,132 +1,17 @@
-@media (min-width: 320px) and (max-width: 580px){
-  body {
-    font-size: 1.2em;
-  }
-  .block { padding: 20px 0; }
-  .btn-devpod {
-    display: block;
-    margin-right: 0;
-    text-align: left;
-    margin-bottom: 1em;
-    i { margin-right: 1em; }
-  }
-  .list-devpod {
-    font-size: 1.3em;
-    a.pull-right { margin-left: 1em; }
-    li {
-      time { font-size: .85em; }
+@media (max-width: 767px){
+    footer {
+        a { display: block; }
     }
-  }
 
-  #episode-detail {
-    h1, h3 { font-size: 1.3em; }
-    h3 {
-      padding-bottom: 0;
-      margin-bottom: .2em;
+    .detail {
+        h1, h3 {
+            font-size: 1em;
+        }
     }
-  }
-
-  #markdown-content {
-    ul {
-      font-size: 1.2em;
+    
+    #markdown-content {
+        p:first-of-type {
+            font-size: 1em;
+        }
     }
-  }
-
-  .archives {
-    a { font-size: 1.3em; margin-bottom: .2em; }
-  }
-
-  #tag-detail,
-  #year-detail {
-    h1 {
-      font-size: 1.5em;
-    }
-  }
-
-  .tags-area {
-    span {
-      display: inline-block;
-      font-size: 1.2em;
-      margin: 5px 5px 5px 0;
-    }
-  }
 }
-
-// @media (min-width: 1200px) {
-//   h1 {
-//     margin-bottom: 1.2em;
-//     font-size: 1.6em;
-//     line-height: 1em;
-//     small {
-//       margin-top: .5em;
-//     }
-//   }
-//
-//   #episode-detail {
-//     h3 { margin-bottom: 12px; }
-//     p {
-//       margin-bottom: 1.3em;
-//     }
-//   }
-// }
-//
-// @media (min-width: 768px) and (max-width: 1024px) {
-//   h1 { font-size: 1.6em; }
-//   h3 { font-size: 1.2em; }
-//   .lead { font-size: 1.2em; }
-//
-//   #episode-detail {
-//       h1 { margin-bottom: 1em; }
-//       p:first-of-type {
-//         font-size: 1.3em;
-//       }
-//   }
-//
-//   #sidebar-logo {
-//     .nav-pills > li {
-//       float: none;
-//     }
-//     .nav > li > a {
-//       padding: 0 0 1em 0;
-//       i {
-//         margin-right: 5px;
-//         float: right !important;
-//       }
-//     }
-//   }
-//
-// }
-//
-//
-// // iPhone Vertical
-// @media (max-width: 320px){
-//   body {
-//     // background-color: #eee;
-//   }
-//   .block {
-//     padding: 0;
-//   }
-//
-//   h1 { font-size: 1.8em; }
-//   h3 { font-size: 1.2em; }
-//
-//   #episode-detail {
-//     h1 {
-//       font-size: 1.2em;
-//       line-height: 1.2em;
-//       margin-bottom: 1.5em;
-//       small { margin-top: 5px; }
-//     }
-//     p:first-of-type {
-//       font-size: 1.2em;
-//       margin-bottom: 1.5em;
-//     }
-//   }
-//
-//   #sidebar-logo {
-//     .nav > li > a {
-//       padding: 0 .5em;
-//       font-size: .85em;
-//     }
-//   }
-// }

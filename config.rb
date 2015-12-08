@@ -28,7 +28,7 @@ activate :livereload
 set :css_dir, 'public/css'
 set :js_dir, 'public/js'
 set :images_dir, 'public/images'
-
+set :canonical_url, 'http://devpod.org'
 set :markdown_engine, :redcarpet
 set :markdown, :layout_engine => :erb, :autolink => true
 

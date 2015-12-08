@@ -1,20 +1,10 @@
-@for $i from 0 through 6 {
-  .dbg#{$i+1} { background-color: darken(yellow, 3 * $i); }
-}
-
 body {
-  font-family: 'Helvetica Neue';
-  font-size: 1.5em;
-  line-height: 1.8em;
-  font-weight: 300;
+    background-color: darken(white, 5);
+    font-family: 'Droid Sans';
 }
 
 a {
-  font-weight: 600;
-}
-
-.block {
-  padding: 5em 0;
+    color: inherit;
 }
 
 img {
@@ -22,141 +12,89 @@ img {
   height: auto;
 }
 
-p {
-  margin-bottom: 1em;
-}
 
 #logo {
-  // background-color: lighten($devpod-yellow, 10);
-  background-color: #eee;
-  padding: 2em 2em .2em 2em;
-  margin-bottom: 1em;
-  img { margin-bottom: 1em; }
-  text-align: center;
-  // color: $devpod-green;
-  color: $devpod-red;
-  font-weight: 600;
+    text-align: center;
 }
 
-.btn-devpod {
-  background-color: black;
-  font-weight: 500;
-  border-radius: 0;
-  color: white;
-  &:hover { color: yellow; }
-  margin-right: 1em;
+#intro {
+    margin: 2em;
+    i {
+        margin: 0 .2em;
+    }
 }
 
 .list-devpod {
-  li.page-number {
-    font-weight: 600;
-  }
-  li:first-child {
-    padding-top: 0;
-  }
-  li {
-    padding: 1em 0;
-    border-bottom: 1px solid #eee;
-    time {
-      display: block;
-      font-size: .7em;
-      line-height: 1em;
-      color: lighten($markdown-lead, 15);
+    background-color: white;
+    margin: 0 0 2em 0;
+    li {
+        padding: 1em;
+        border-bottom: 1px solid #eee;
     }
-  }
+
+    time {
+        display: block;
+        font-size: 0.75em;
+    }
 }
 
-#episode-detail {
-  h1 {
-    background-color: $markdown-lead;
-    color: white;
-    margin: 0;
-    padding: 10px;
-    a {
-      color: inherit;
-      &:hover {
-        text-decoration: none;
-        color: yellow;
-      }
+.detail {
+    background-color: white;
+    padding: 2em;
+    margin: 0 0 2em 0;
+    h1 {
+        font-size: 1.4em;
+        font-weight: 800;
+        margin: 0;
     }
-  }
-  time { color: $markdown-lead; }
+    time {
+        font-size: 0.85em;
+        color: #aaa;
+        display: block;
+        margin-bottom: 1em;
+    }
+    h3 {
+        font-size: 1.2em;
+        font-weight: 800;
+        border-bottom: 1px solid #ccc;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            padding: .2em 0;
+            a:after {   content: " »" }
+        }
+    }
 }
 
 #markdown-content {
-  h3 {
-    font-weight: 600;
-    color: $markdown-lead;
-    // color: black;
-    // border-bottom: 2px solid black;
-    border-bottom: 2px solid $markdown-lead;
-  }
-  p:first-of-type {
-    // background-color: $markdown-lead;
-    background-color: #ddd;
-    color: black;
-    // color: white;
-    padding: 10px;
-    margin-top: 1.3em;
-    font-size: 1.6em;
-    font-weight: 400;
-    line-height: 1.4em;
-    a { color: inherit; }
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-    li {
-      padding: .2em 0;
-      a:after {
-        content: " »"
-      }
+    margin-top: 2em;
+    p:first-of-type {
+        font-size: 1.6em;
+        color: #555;
+        margin-bottom: 1.5em;
     }
-  }
-}
-
-.tags-area {
-  a { color: white; }
-}
-
-
-#tag-detail,
-#year-detail {
-  h1 {
-    margin: 0 0 10px 0;
-    strong { color: $markdown-lead; }
-  }
 }
 
 .archives {
-  margin-bottom: 1em;
-  strong {
-    display: block;
-    padding: 0 0 0 .5em;
-    margin-bottom: .4em;
-    color: $markdown-lead;
-    font-size: 1.4em;
-    border-bottom: 2px solid $markdown-lead;
-  }
-  a { display: block; }
+    background-color: white;
+    padding: 2em;
+    margin-bottom: 2em;
+    ul {
+        margin: 0;
+    }
 }
 
-.footer {
-  text-align: center;
-  background-color: #555;
-  color: white;
-  a {
-    color: inherit;
-    &:hover {
-      text-decoration: none;
+footer {
+    font-size: 1.2em;
+    color: lighten(black, 40);
+    padding: 1em;
+    background-color: white;
+    text-align: center;
+    a {
+        margin-left: 1em;
+        margin-right: 1em;
     }
-  }
-  a:after {
-    content: ' \2022 ';
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-  a:last-child:after {
-    content: '';
-  }
 }

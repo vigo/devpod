@@ -1,29 +1,35 @@
-<%
-HTML_TITLE = "devPod | Türkçe Developer Podcast"
-HTML_DESCRIPTION = "Türkçe kaynak yok diyenlere müjde! Türkçe podcast! Açık kaynak, Mac, Linux ve tüm popüler web teknolojileri!"
-%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title><%= HTML_TITLE %></title>
-    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+    <title>devPod | <%= current_page.data.title %></title>
+    <%= feed_tag :atom, "#{canonical_url}#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <%= partial "partials/meta", :locals => {:meta_keywords => "devpod, development, developer, podcast, türkçe, istanbul, türkiye, dev, ruby, python, php, perl, c, objective-c", :meta_description => HTML_DESCRIPTION} %>
-    <%= partial "partials/open_graph", :locals => { :html_title => HTML_TITLE, :html_description => HTML_DESCRIPTION } %>
+    <%
+    html_description = current_page.data.description
+    html_description = current_page.data.title unless current_page.data.description
+    
+    html_perma_link = "#{canonical_url}#{blog.options.prefix.to_s}/#{request.path}"
+    %>
+    <%= partial "partials/meta", :locals => {
+        :meta_keywords => "devpod, development, developer, podcast, türkçe, istanbul, türkiye, dev, ruby, python, php, perl, c, objective-c",
+        :meta_description => html_description } %>
+    <%= partial "partials/open_graph", :locals => {
+        :html_title => current_page.data.title,
+        :html_description => html_description,
+        :perma_link => html_perma_link,
+        } %>
     <%= partial "partials/icons" %>
     <%= partial "partials/html_shim" %>
 
-    <base target="_blank">
-
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    
     <%= stylesheet_link_tag 'application' %>
     <%= yield_content :css %>
   </head>
   <body>
-
     <%= yield %>
 
     <%= partial "partials/footer" %>

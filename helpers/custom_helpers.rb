@@ -1,4 +1,10 @@
 module CustomHelpers
+  def icon(icon_name, size="")
+    size = " fa-#{size}" if size
+    "<i class=\"fa fa-#{icon_name}#{size}\"></i>"
+  end
+
+
   def custom_pager(**options)
     output = []
     # paginate =
