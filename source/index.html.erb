@@ -1,74 +1,37 @@
 ---
 pageable: true
 per_page: 10
+title: "Türkçe Developer Podcast"
+description:  "Türkçe kaynak yok diyenlere müjde! Türkçe podcast! Açık kaynak, Mac, Linux ve tüm popüler web teknolojileri!"
 ---
 <div class="block">
     <div class="container">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+
                 <%= partial "partials/logo_part" %>
-
-                <p class="archives hidden-xs">
-                    <strong>Arşiv [ <%= blog.articles.size %> ]</strong><% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-                        <%= link_to "» #{year}: [ #{articles.size} kayıt ]", blog_year_path(year), :target => "_self" %>
-                    <% end %>
-                </p>
-            </div>
-            <div class="col-sm-8">
-                <p class="lead">
-                    <strong>Mayıs 2012</strong>&rsquo;den beri ara ara yayınına devam eden kendi meşrebinde bir podcast!
-                    Modern yazılım teknolojileri, popüler kütüphaneler, yazılım dilleri, konferanslar, Linux,
-                    Unix, iOS, MacOS, Python, Ruby, Git gibi konular içerir.
-                </p>
-                <%
-                icon_twitter = '<i class="fa fa-twitter-square"></i>'
-                icon_facebook = '<i class="fa fa-facebook-square"></i>'
-                icon_itunes = '<i class="fa fa-rss-square"></i>'
-                icon_rss = '<i class="fa fa-rss-square"></i>'
-                icon_bulletion = '<i class="fa fa-envelope-square"></i>'
-                %>
-                <p>
-                    <%= link_to "#{icon_twitter} Twitter", "https://twitter.com/podcastmaster", :class => "btn btn-devpod" %>
-                    <%= link_to "#{icon_facebook} Facebook", "https://www.facebook.com/devpod", :class => "btn btn-devpod" %>
-                    <%= link_to "#{icon_itunes} iTunes", "http://bit.ly/devpod-itunes", :class => "btn btn-devpod" %>
-                    <%= link_to "#{icon_rss} RSS", "http://devpod.org/feed.xml", :class => "btn btn-devpod" %>
-                    <%= link_to "#{icon_bulletion} Bülten", "http://eepurl.com/NumbP", :class => "btn btn-devpod" %>
-                </p>
-                <hr/>
-
-                <ul class="list-unstyled list-devpod">
-                <%
-                if paginate && page_number > 1
-                    concat "<li class=\"page-number\">Sayfa: #{page_number}</li>"
-                end
-                page_articles.each_with_index do |article, i|
-                  file_size = Filesize.from("#{article.metadata[:page]['length']} B").to_s("Mb")
-
-                  time_data = article.date.strftime('%Y-%m-%d %H:%M:%S')
-                  i18n_date = I18n.localize(article.date, :format => "%e %B %Y, %A, saat %H:%M")
-
-                  concat '<li>'
-                    concat link_to '<i class="fa fa-download"></i>', article.metadata[:page]['download'], :class => "btn btn-primary btn-xs pull-right", :title => "İndirmek için tıkla: #{file_size}"
-                    concat link_to "#{article.title}<time datetime=\"#{time_data}\">#{i18n_date}</time>", article, :target => "_self", :title => "Bölüm notları ve detaylar için tıklayın"
-                  concat '</li>'
-                end
-                %>
-                </ul>
-                <%= custom_pager :paginate => paginate,
-                                 :num_pages => num_pages,
-                                 :current_page => page_number,
-                                 :prev_page => prev_page,
-                                 :next_page => next_page,
-                                 :url_home => "/",
-                                 :url_schema => "/sayfa/%d/"
-                %>
-
-                <p class="archives visible-xs">
-                    <strong>Arşiv [ <%= blog.articles.size %> ]</strong><% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-                        <%= link_to "» #{year}: [ #{articles.size} kayıt ]", blog_year_path(year), :target => "_self" %>
-                    <% end %>
-                </p>
-
+                
+                <%= partial "partials/list_page_articles", :locals => {
+                    :page_articles => page_articles,
+                    :paginate => paginate,
+                    :num_pages => num_pages,
+                    :page_number => page_number,
+                    :prev_page => prev_page,
+                    :next_page => next_page,
+                    :url_home => "/",
+                    :url_schema => "/sayfa/%d/"
+                } %>
+                
+                
+                <div class="archives visible-xs">
+                    <p>Arşiv&rsquo;de toplam <strong><%= blog.articles.size %></strong> kayıt bulunuyor.</p>
+                    <ul class="list-unstyled">
+                        <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+                        <li><%= link_to "» #{year}: [ #{articles.size} kayıt ]", blog_year_path(year) %></li>
+                        <% end %>
+                    </ul>
+                </div>
+                
             </div>
         </div>
     </div>
