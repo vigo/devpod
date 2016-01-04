@@ -22,7 +22,7 @@ task :podcast, :episode_number, :episode_date do |t, args|
   # puts "#{Time.now.strftime('%a, %e %b %Y %H:%M:%S')}"
   t = args.episode_date
   t = DateTime.parse(args.episode_date) if args.episode_date.is_a?(String)
-  filename = "source/#{t.strftime('%Y-%m-%d')}-#{args.episode_number.to_url}.html.markdown.erb"
+  filename = "source/posts/#{t.strftime('%Y-%m-%d')}-#{args.episode_number.to_url}.html.markdown.erb"
   open(filename, 'w') do |post|
     post.puts "---"
     post.puts "title: \"title\""
