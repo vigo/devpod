@@ -98,3 +98,12 @@ footer {
         margin-right: 1em;
     }
 }
+
+#email-subscription {
+    h4 {
+        font-weight: bold;
+        color: darken(red, 10);
+    }
+    margin-top: 2em;
+    padding: 1em 0;
+}
