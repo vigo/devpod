@@ -31,6 +31,7 @@ set :images_dir, 'public/images'
 set :canonical_url, 'http://devpod.org'
 set :markdown_engine, :redcarpet
 set :markdown, :layout_engine => :erb, :autolink => true
+set :podcast_prefix, "http://www.podtrac.com/pts/redirect.mp3/"
 
 configure :build do
   activate :minify_css

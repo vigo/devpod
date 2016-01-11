@@ -43,7 +43,8 @@ xml.rss "xmlns:itunes" => "http://www.itunes.com/dtds/podcast-1.0.dtd", :version
             xml.description clean_description
             xml.itunes :summary, clean_description
             xml.itunes :subtitle, clean_description
-            xml.enclosure :url => article.metadata[:page]['download'], :length => article.metadata[:page]['length'], :type => article.metadata[:page]['type']
+            xml.enclosure :url => podtrack_url(article.metadata[:page]['download']), :length => article.metadata[:page]['length'], :type => article.metadata[:page]['type']
+            # xml.enclosure :url => article.metadata[:page]['download'], :length => article.metadata[:page]['length'], :type => article.metadata[:page]['type']
             xml.guid URI.join(general_site_url, article.url), :isPermaLink => "false"
             xml.itunes :duration, article.metadata[:page]['duration']
             xml.itunes :keywords, article.tags.join(",")

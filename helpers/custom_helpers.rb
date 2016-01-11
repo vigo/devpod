@@ -1,4 +1,8 @@
 module CustomHelpers
+  def podtrack_url(url)
+    "#{podcast_prefix}#{url.sub("https://", "")}"
+  end
+  
   def icon(icon_name, size="")
     size = " fa-#{size}" if size
     "<i class=\"fa fa-#{icon_name}#{size}\"></i>"

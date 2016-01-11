@@ -8,7 +8,7 @@
                 
                 <%
                 file_size = Filesize.from("#{current_page.metadata[:page]['length']} B").to_s("Mb")
-                file_download = current_page.metadata[:page]['download']
+                file_download = podtrack_url(current_page.metadata[:page]['download'])
                 time_data = current_page.date.strftime('%Y-%m-%d %H:%M:%S')
                 i18n_date = I18n.localize(current_page.date, :format => "%e %B %Y, %A, saat %H:%M")
                 %>
