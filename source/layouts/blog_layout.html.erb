@@ -17,7 +17,9 @@
                     <h1><%= current_page.title %></h1>
                     <time datetime="<%= time_data %>"><%= i18n_date %></time>
                     
-                    <p><%= link_to "#{icon "download"} İndir [ #{file_size} ]", file_download %></p>
+                    <p>
+                        <%= link_to "#{icon "download"} İndir [ #{file_size} ]", file_download %>
+                    </p>
                     
                     <div id="markdown-content">
                         <%= yield %>
@@ -29,6 +31,11 @@
                             <%= link_to tag, tag_path(tag), :class => "label label-primary" %>
                         <% end %>
                     </div>
+                    
+                    <h3>iTunes</h3>
+                    <p>
+                        <a style="text-decoration: underline;" href="http://bit.ly/devpod-itunes">Podcast&rsquo;imizi <strong>iTunes</strong> üzerinden dinlemek üye abone olmak için tıklayın!</a>
+                    </p>
                 </div>
                 
                 <%= partial "partials/disqus" %>
