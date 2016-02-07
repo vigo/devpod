@@ -16,10 +16,15 @@
                 <div class="detail">
                     <h1><%= current_page.title %></h1>
                     <time datetime="<%= time_data %>"><%= i18n_date %></time>
-                    
                     <p>
                         <%= link_to "#{icon "download"} İndir [ #{file_size} ]", file_download %>
                     </p>
+                    
+                    <% if current_page.metadata[:page].key?("youtube") %>
+                    <div class="videoWrapper">
+                        <iframe src="<%= current_page.metadata[:page]['youtube'] %>" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <% end %>
                     
                     <div id="markdown-content">
                         <%= yield %>

@@ -1,6 +1,10 @@
 module CustomHelpers
+  def has_video(article)
+    " + #{icon("video-camera")}" if article.metadata[:page].has_key?("youtube")
+  end
+  
   def podtrack_url(url)
-    "#{podcast_prefix}#{url.sub("https://", "")}"
+    "#{podcast_prefix}#{url.sub(/https?:\/\//, "")}"
   end
   
   def icon(icon_name, size="")
