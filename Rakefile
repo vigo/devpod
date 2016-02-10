@@ -19,7 +19,6 @@ desc "New podcast"
 task :podcast, :episode_number, :episode_date do |t, args|
   args.with_defaults(:episode_number => "000")
   args.with_defaults(:episode_date => Time.now)
-  # puts "#{Time.now.strftime('%a, %e %b %Y %H:%M:%S')}"
   t = args.episode_date
   t = DateTime.parse(args.episode_date) if args.episode_date.is_a?(String)
   filename = "source/posts/#{t.strftime('%Y-%m-%d')}-#{args.episode_number.to_url}.html.markdown.erb"
@@ -32,9 +31,11 @@ task :podcast, :episode_number, :episode_date do |t, args|
     post.puts "duration: \"01:01\""
     post.puts "type: \"audio/x-m4a\""
     post.puts "download: \"http://\""
+    post.puts "# youtube: \"https://www.youtube.com/embed/?\""
     post.puts "---"
     post.puts "Kısa açıklama...READ_MORE"
     post.puts ""
     post.puts "### Bölüm Notları"
   end
+  puts "File created: #{filename}"
 end
