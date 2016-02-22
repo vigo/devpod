@@ -32,6 +32,7 @@ task :podcast, :episode_number, :episode_date do |t, args|
     post.puts "type: \"audio/x-m4a\""
     post.puts "download: \"http://\""
     post.puts "# youtube: \"https://www.youtube.com/embed/?\""
+    post.puts "# ?list=PLTx0WGL4YMuSzEFvj_h1kEXKrgWDwQojT"
     post.puts "---"
     post.puts "Kısa açıklama...READ_MORE"
     post.puts ""
