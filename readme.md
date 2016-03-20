@@ -2,7 +2,7 @@
 
 Türkçe developer podcast resmii websitesi!
 
-# Kurulum
+## Kurulum
 
 Öncelikle `ruby 2.2.2` kurulu olmalı (`rvm` ya da `rbenv`)
 
@@ -18,3 +18,7 @@ Deployment için root dizininde; `creds.rb` dosyasını oluşturun.
 gibi statik sayfaları sunacağınız web sunucusu ile ilgili bilgileri girin.
 
 [http://devpod.org](http://devpod.org)
+
+## Lisans
+
+Bu proje MIT lisansı kullanmaktadır.
