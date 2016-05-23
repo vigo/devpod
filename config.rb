@@ -42,8 +42,5 @@ page "/feed.xml", layout: false
 
 activate :deploy do |deploy|
   deploy.build_before = true
-  deploy.method   = :rsync
-  deploy.user     = SSH_USER
-  deploy.host     = SSH_HOST
-  deploy.path     = SSH_PATH
+  deploy.deploy_method = :git
 end
