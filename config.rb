@@ -42,5 +42,7 @@ page "/feed.xml", layout: false
 
 activate :deploy do |deploy|
   deploy.build_before = true
-  deploy.deploy_method = :git
+  deploy.method = :git
+  deploy.remote = "origin"
+  deploy.branch = "gh-pages"
 end
