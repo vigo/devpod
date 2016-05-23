@@ -8,14 +8,15 @@ Türkçe developer podcast resmii websitesi!
 
     bundle install --path vendor/bundle
     bundle exec middleman
+    bundle exec rake -T
+    
+    rake deploy                                # Deploy
+    rake podcast[episode_number,episode_date]  # New podcast
+    rake preview                               # Start preview / development server
 
-Deployment için root dizininde; `creds.rb` dosyasını oluşturun.
+## Deployment
 
-    SSH_USER = "kullancı adı"
-    SSH_HOST = "sunucu"
-    SSH_PATH = "/path/to/devpod.org"
-
-gibi statik sayfaları sunacağınız web sunucusu ile ilgili bilgileri girin.
+GitHub Pages kullanılıyor.
 
 [http://devpod.org](http://devpod.org)
 
