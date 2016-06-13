@@ -2,7 +2,6 @@ require 'stringex'
 require 'time'
 require 'sanitize'
 require 'filesize'
-require './creds'
 
 activate :i18n
 
