@@ -8,7 +8,7 @@
     <%
     html_description = current_page.data.description
     html_description = current_page.data.title unless current_page.data.description
-    
+
     html_perma_link = "#{canonical_url}#{blog.options.prefix.to_s}/#{request.path}"
     %>
     <%= partial "partials/meta", :locals => {
@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
-    
+
     <%= stylesheet_link_tag 'application' %>
     <%= yield_content :css %>
   </head>
