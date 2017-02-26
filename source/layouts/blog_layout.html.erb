@@ -1,48 +1,68 @@
 <% wrap_layout :layout do %>
-<div class="block">
+<div class="block" >
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-sm-offset-3">
 
                 <%= partial "partials/logo_part" %>
-                
+
                 <%
                 file_size = Filesize.from("#{current_page.metadata[:page]['length']} B").to_s("Mb")
                 file_download = podtrack_url(current_page.metadata[:page]['download'])
                 time_data = current_page.date.strftime('%Y-%m-%d %H:%M:%S')
                 i18n_date = I18n.localize(current_page.date, :format => "%e %B %Y, %A, saat %H:%M")
+		mp3_url = podtrack_url(current_page.metadata[:page]['download'])
+
                 %>
-                
-                <div class="detail">
+
+                <div class="detail"  id="detail">
                     <h1><%= current_page.title %></h1>
                     <time datetime="<%= time_data %>"><%= i18n_date %></time>
-                    <p>
-                        <%= link_to "#{icon "download"} İndir [ #{file_size} ]", file_download %>
-                    </p>
-                    
+
                     <% if current_page.metadata[:page].key?("youtube") %>
                     <div class="videoWrapper">
                         <iframe src="<%= current_page.metadata[:page]['youtube'] %>" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <% end %>
-                    
-                    <div id="markdown-content">
+
+		    <div class="tanitim">
+		      <%= current_page.metadata[:page]['tanitim'] %>
+		    </div>
+
+		    <div class='mp3'>MP3 dinle:</div>
+		    <div><audio src='#{mp3_url}' preload='none' controls='controls'></audio></div>
+		    <div id="markdown-content">
                         <%= yield %>
                     </div>
-                    
+
+    <div style='text-align: right'>
+      <%= link_to "MP3 indir", mp3_url %>
+     /
+      <%= link_to "iTunes'tan abone ol", "http://bit.ly/devpod-itunes" %>
+      /
+      <%= link_to "YouTube'dan abone ol", "https://www.youtube.com/playlist?list=PLTx0WGL4YMuSzEFvj_h1kEXKrgWDwQojT" %>
+		      </div>
+
+		    <!-- <p> -->
+		    <!--   <%= link_to "#{icon "download"} Ses Dosyası İndir [ #{file_size} ]", file_download %> -->
+                    <!-- </p> -->
+
+		    <!-- <h3>iTunes</h3> -->
+                    <!-- <p> -->
+                    <!--     <a style="text-decoration: underline;" href="http://bit.ly/devpod-itunes">Podcast&rsquo;imize <strong>iTunes</strong> üzerinden abone olmak için tıklayın!</a> -->
+                    <!-- </p> -->
+
+
                     <h3>Etiketler</h3>
                     <div class="tags">
                         <% current_page.tags.each do |tag| %>
                             <%= link_to tag, tag_path(tag), :class => "label label-primary" %>
                         <% end %>
                     </div>
-                    
-                    <h3>iTunes</h3>
-                    <p>
-                        <a style="text-decoration: underline;" href="http://bit.ly/devpod-itunes">Podcast&rsquo;imizi <strong>iTunes</strong> üzerinden dinlemek üye abone olmak için tıklayın!</a>
-                    </p>
+
+
                 </div>
-                
+
                 <%= partial "partials/disqus" %>
             </div>
         </div>

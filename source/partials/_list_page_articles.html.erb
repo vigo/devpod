@@ -3,11 +3,37 @@
 page_articles.each_with_index do |article, i|
   file_size = Filesize.from("#{article.metadata[:page]['length']} B").to_s("Mb")
   time_data = article.date.strftime('%Y-%m-%d %H:%M:%S')
-  i18n_date = I18n.localize(article.date, :format => "%e %B %Y, %A, saat %H:%M")
-  concat '<li>'
-    concat link_to icon("download"), podtrack_url(article.metadata[:page]['download']), :class => "btn btn-primary btn-xs pull-right", :title => "İndirmek için tıkla: #{file_size}"
-    concat link_to "#{article.title}#{has_video(article)}<time datetime=\"#{time_data}\">#{i18n_date}</time>", article, :target => "_self", :title => "Bölüm notları ve detaylar için tıklayın"
-  concat '</li>'
+son_bolum = (i == 0 and page_number == 1)
+  i18n_date = I18n.localize(article.date, :format => "%e %B %Y")
+mp3_url = podtrack_url(article.metadata[:page]['download'])
+bolum_class = "bolum "  + if son_bolum then "son-bolum" else "" end
+
+if son_bolum and false
+ concat "<li class='bolum' id='son-bolum-ayraci'>Son bölüm</li>"
+end
+  concat "<li class='#{bolum_class}'>"
+    # concat link_to icon("download"), podtrack_url(article.metadata[:page]['download']), :class => "btn btn-primary btn-xs pull-right", :title => "İndirmek için tıkla: #{file_size}"
+    concat link_to "<h3>#{article.title}</h3>", article
+    concat "<time datetime='#{time_data}'>#{i18n_date}</time>"
+    if article.metadata[:page].key?("youtube")
+    concat "<div class='videoWrapper'><iframe src='#{article.metadata[:page]['youtube']}' frameborder='0' allowfullscreen></iframe></div>"
+    end
+    concat "<div class='tanitim'>#{article.metadata[:page]['tanitim']}</div>"
+    concat link_to "<h4 class='bolum-notlari'>Bölüm notları için tıklayın</h4>", article, :target => "_self", :title => ""
+    concat "<div class='mp3'>MP3 dinle:</div>"
+    concat "<div><audio src='#{mp3_url}' preload='none' controls='controls'></audio></div>"
+    concat "<div style='text-align: right'>"
+      concat link_to "MP3 indir", mp3_url
+      concat " / "
+      concat link_to "iTunes'tan abone ol", "http://bit.ly/devpod-itunes"
+      concat " / "
+      concat link_to "YouTube'dan abone ol", "https://www.youtube.com/playlist?list=PLTx0WGL4YMuSzEFvj_h1kEXKrgWDwQojT"
+      concat "</div>"
+    concat '</li>'
+
+if son_bolum
+concat '<li class="bolum"  id="onceki-bolumler-ayraci">Önceki bölümler</li>'
+end
 end
 %>
 </ul>
