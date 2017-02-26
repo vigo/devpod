@@ -13,13 +13,13 @@ if son_bolum and false
 end
   concat "<li class='#{bolum_class}'>"
     # concat link_to icon("download"), podtrack_url(article.metadata[:page]['download']), :class => "btn btn-primary btn-xs pull-right", :title => "İndirmek için tıkla: #{file_size}"
-    concat link_to "<h3>#{article.title}</h3>", article
+    concat link_to "<h3>#{article.title}</h3>", article, :anchor=> "detail"
     concat "<time datetime='#{time_data}'>#{i18n_date}</time>"
     if article.metadata[:page].key?("youtube")
     concat "<div class='videoWrapper'><iframe src='#{article.metadata[:page]['youtube']}' frameborder='0' allowfullscreen></iframe></div>"
     end
     concat "<div class='tanitim'>#{article.metadata[:page]['tanitim']}</div>"
-    concat link_to "<h4 class='bolum-notlari'>Bölüm notları için tıklayın</h4>", article, :target => "_self", :title => ""
+    concat link_to "<h4 class='bolum-notlari'>Bölüm notları için tıklayın</h4>", article, :target => "_self", :title => "", :anchor=>"detail"
     concat "<div class='mp3'>MP3 dinle:</div>"
     concat "<div><audio src='#{mp3_url}' preload='none' controls='controls'></audio></div>"
     concat "<div style='text-align: right'>"
