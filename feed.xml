@@ -38,7 +38,7 @@ Indie Game Developer: Bilgem Çakır</itunes:summary>
       <itunes:subtitle>Kendisi OLDSKOOL C64 Coder'ı, Demoscener, eski bir Microsoft developer'ı, 
 Amazon Firephone'da 3D dünyaları yaptı, Amazon GO ve şimdi 
 Indie Game Developer: Bilgem Çakır</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200042.m4a" length="63471982" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200042.m4a" length="63471982" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2017/02/13/042/</guid>
       <itunes:duration>02:09:17</itunes:duration>
       <itunes:keywords>c64,demoscene,microsoft,amazon,3d,c++,d2d,glance,aesrude</itunes:keywords>
@@ -73,7 +73,7 @@ kendi geliştirdikleri özel extension’lardan ve Silikon Vadisi’nden bahse
  
  GitHub 
  YouTube</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200041.m4a" length="30304212" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200041.m4a" length="30304212" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2017/01/02/041/</guid>
       <itunes:duration>01:01:42</itunes:duration>
       <itunes:keywords>citus data,postgresql</itunes:keywords>
@@ -84,7 +84,7 @@ kendi geliştirdikleri özel extension’lardan ve Silikon Vadisi’nden bahse
       <description>GitLab’den Fatih Acet ile sohbet ettik...</description>
       <itunes:summary>GitLab’den Fatih Acet ile sohbet ettik...</itunes:summary>
       <itunes:subtitle>GitLab’den Fatih Acet ile sohbet ettik...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200040%20-%20Fatih%20Acet.m4a" length="81636927" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200040%20-%20Fatih%20Acet.m4a" length="81636927" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2016/06/13/040/</guid>
       <itunes:duration>01:23:46</itunes:duration>
       <itunes:keywords>gitlab,javascript,git</itunes:keywords>
@@ -104,7 +104,7 @@ Said Özcan...</itunes:summary>
 Konuklarımız Adem İlter, 
 Burak Can ve 
 Said Özcan...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200039%20-%20DeckHub.m4a" length="51140903" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200039%20-%20DeckHub.m4a" length="51140903" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2016/04/25/039/</guid>
       <itunes:duration>52:28</itunes:duration>
       <itunes:keywords>deckhub,github</itunes:keywords>
@@ -115,7 +115,7 @@ Said Özcan...</itunes:subtitle>
       <description>Cisco’dan sevgili Volkan Özçelik ile Javascript, node ve web dünyasını konuştuk!</description>
       <itunes:summary>Cisco’dan sevgili Volkan Özçelik ile Javascript, node ve web dünyasını konuştuk!</itunes:summary>
       <itunes:subtitle>Cisco’dan sevgili Volkan Özçelik ile Javascript, node ve web dünyasını konuştuk!</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200038.m4a" length="102196064" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200038.m4a" length="102196064" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2016/04/11/038/</guid>
       <itunes:duration>01:44:52</itunes:duration>
       <itunes:keywords>js,javascript,node,fluentconf,web</itunes:keywords>
@@ -129,7 +129,7 @@ ile Go, Vim, uzaktan çalışma konularını konuştuk...</description>
 ile Go, Vim, uzaktan çalışma konularını konuştuk...</itunes:summary>
       <itunes:subtitle>3 yıl Koding.com, şimdi de Digitial Ocean’da çalışan sevgili Fatih Arslan 
 ile Go, Vim, uzaktan çalışma konularını konuştuk...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200037.m4a" length="73167798" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200037.m4a" length="73167798" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2016/04/04/037/</guid>
       <itunes:duration>01:15:04</itunes:duration>
       <itunes:keywords>go,vim,remote</itunes:keywords>
@@ -140,7 +140,7 @@ ile Go, Vim, uzaktan çalışma konularını konuştuk...</itunes:subtitle>
       <description>İnterneti Kıran Adam: Azer Koçulu sadece devPod’a konuştu...</description>
       <itunes:summary>İnterneti Kıran Adam: Azer Koçulu sadece devPod’a konuştu...</itunes:summary>
       <itunes:subtitle>İnterneti Kıran Adam: Azer Koçulu sadece devPod’a konuştu...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200036.m4a" length="71599495" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200036.m4a" length="71599495" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2016/03/28/036/</guid>
       <itunes:duration>01:13:28</itunes:duration>
       <itunes:keywords>npm,kik,leftpad,jelly</itunes:keywords>
@@ -157,7 +157,7 @@ yaptık. [İngilizce]...</itunes:summary>
       <itunes:subtitle>İçimizden biri... Joshua Ballanco ile Apple,
 Mac OS, Ruby, Ankara, Woz, Jobs muhabbeti
 yaptık. [İngilizce]...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200035.m4a" length="38859229" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200035.m4a" length="38859229" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2016/03/07/035/</guid>
       <itunes:duration>01:19:10</itunes:duration>
       <itunes:keywords>apple,ruby,ankara,emacs</itunes:keywords>
@@ -174,7 +174,7 @@ Development hakkında konuştuk!...</itunes:summary>
       <itunes:subtitle>Fehmi Can Sağlam’la Java, Scala, Play, Podcast,
 4Primes, Ankara, İstanbul, Trabzon,
 Development hakkında konuştuk!...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200034.m4a" length="49639976" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200034.m4a" length="49639976" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2016/02/22/034/</guid>
       <itunes:duration>01:41:08</itunes:duration>
       <itunes:keywords>java,scala,play,podcast</itunes:keywords>
@@ -185,7 +185,7 @@ Development hakkında konuştuk!...</itunes:subtitle>
       <description>Disqus’dan Burak Yiğit Kaya ile sohbet ettik...</description>
       <itunes:summary>Disqus’dan Burak Yiğit Kaya ile sohbet ettik...</itunes:summary>
       <itunes:subtitle>Disqus’dan Burak Yiğit Kaya ile sohbet ettik...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200033.m4a" length="40402916" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200033.m4a" length="40402916" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2016/02/15/033/</guid>
       <itunes:duration>01:22:18</itunes:duration>
       <itunes:keywords>byk,disqus,js,python</itunes:keywords>
@@ -199,7 +199,7 @@ adam: Ahmet Alp Balkan...</description>
 adam: Ahmet Alp Balkan...</itunes:summary>
       <itunes:subtitle>Ülkemizin medar-ı iftiharı, Microsoft’sa Apple kullanan
 adam: Ahmet Alp Balkan...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200032.m4a" length="43259305" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200032.m4a" length="43259305" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2016/02/08/032/</guid>
       <itunes:duration>01:28:07</itunes:duration>
       <itunes:keywords>microsoft,docker,azure,go</itunes:keywords>
@@ -213,7 +213,7 @@ ve Berke Karalar’la menemen yedik!...</description>
 ve Berke Karalar’la menemen yedik!...</itunes:summary>
       <itunes:subtitle>Php User Group’tan Emir Karşıyakalı, Osman Yüksel
 ve Berke Karalar’la menemen yedik!...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200031.m4a" length="32600263" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200031.m4a" length="32600263" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2016/02/01/031/</guid>
       <itunes:duration>01:06:24</itunes:duration>
       <itunes:keywords>php</itunes:keywords>
@@ -227,7 +227,7 @@ bitmesine 1 saat kala...</description>
 bitmesine 1 saat kala...</itunes:summary>
       <itunes:subtitle>Tamamen random kararlaştırılmış gerilla kaydı! Oylamaların
 bitmesine 1 saat kala...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%20Packathon%20Aragaz%C4%B1.m4a" length="12767045" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%20Packathon%20Aragaz%C4%B1.m4a" length="12767045" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2016/01/25/000/</guid>
       <itunes:duration>25:59</itunes:duration>
       <itunes:keywords>packathon,hackathon</itunes:keywords>
@@ -238,7 +238,7 @@ bitmesine 1 saat kala...</itunes:subtitle>
       <description>23 Ocak 2016’da düzenlenecek Packathon üzerine konuştuk...</description>
       <itunes:summary>23 Ocak 2016’da düzenlenecek Packathon üzerine konuştuk...</itunes:summary>
       <itunes:subtitle>23 Ocak 2016’da düzenlenecek Packathon üzerine konuştuk...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200030.m4a" length="32600242" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200030.m4a" length="32600242" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2016/01/18/030/</guid>
       <itunes:duration>01:06:24</itunes:duration>
       <itunes:keywords>packathon,hackathon</itunes:keywords>
@@ -249,7 +249,7 @@ bitmesine 1 saat kala...</itunes:subtitle>
       <description>Lemi Organ Ergin ile belkide devPod tarihinin en uzun kaydını yaptık...</description>
       <itunes:summary>Lemi Organ Ergin ile belkide devPod tarihinin en uzun kaydını yaptık...</itunes:summary>
       <itunes:subtitle>Lemi Organ Ergin ile belkide devPod tarihinin en uzun kaydını yaptık...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200029.m4a" length="54415351" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200029.m4a" length="54415351" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2016/01/11/029/</guid>
       <itunes:duration>01:50:52</itunes:duration>
       <itunes:keywords>agile,tdd,scrum,kanban,bdd,git</itunes:keywords>
@@ -260,7 +260,7 @@ bitmesine 1 saat kala...</itunes:subtitle>
       <description>Yeni Co-Host’umuz Üstün Özgür’le 2015 yılını değerlendirdik...</description>
       <itunes:summary>Yeni Co-Host’umuz Üstün Özgür’le 2015 yılını değerlendirdik...</itunes:summary>
       <itunes:subtitle>Yeni Co-Host’umuz Üstün Özgür’le 2015 yılını değerlendirdik...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200028.m4a" length="25745478" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200028.m4a" length="25745478" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2016/01/04/028/</guid>
       <itunes:duration>52:26</itunes:duration>
       <itunes:keywords>js,ruby,php,python,list,clojure,rust,crystal,elm,haskel</itunes:keywords>
@@ -271,7 +271,7 @@ bitmesine 1 saat kala...</itunes:subtitle>
       <description>Üstün Özgür’le yaptığımız röportaj...</description>
       <itunes:summary>Üstün Özgür’le yaptığımız röportaj...</itunes:summary>
       <itunes:subtitle>Üstün Özgür’le yaptığımız röportaj...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200027.m4a" length="37510382" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200027.m4a" length="37510382" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2015/12/07/027/</guid>
       <itunes:duration>01:16:25</itunes:duration>
       <itunes:keywords>lisp,clojure,python,ruby,emacs,django,rails,react,js</itunes:keywords>
@@ -282,7 +282,7 @@ bitmesine 1 saat kala...</itunes:subtitle>
       <description>#025’in devamı ve JSIST 2014 detayları!...</description>
       <itunes:summary>#025’in devamı ve JSIST 2014 detayları!...</itunes:summary>
       <itunes:subtitle>#025’in devamı ve JSIST 2014 detayları!...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/%23026%20-%20JSIST%202014%21.m4a" length="52526357" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/%23026%20-%20JSIST%202014%21.m4a" length="52526357" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2014/08/12/026/</guid>
       <itunes:duration>53:16</itunes:duration>
       <itunes:keywords>jsist</itunes:keywords>
@@ -293,7 +293,7 @@ bitmesine 1 saat kala...</itunes:subtitle>
       <description>10 Mayıs 2014 codeFront.io Front-end Development Konferansı maceraları bölüm 1...</description>
       <itunes:summary>10 Mayıs 2014 codeFront.io Front-end Development Konferansı maceraları bölüm 1...</itunes:summary>
       <itunes:subtitle>10 Mayıs 2014 codeFront.io Front-end Development Konferansı maceraları bölüm 1...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200025.m4a" length="56170344" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200025.m4a" length="56170344" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2014/07/25/025/</guid>
       <itunes:duration>57:38</itunes:duration>
       <itunes:keywords>codefront,linz,frontend,konferans</itunes:keywords>
@@ -307,7 +307,7 @@ bitmesine 1 saat kala...</itunes:subtitle>
 /Linz Developer Konferansı.</itunes:summary>
       <itunes:subtitle>1 Mart 2014’te Ars Electronica Center’da düzenlenen Kod.io
 /Linz Developer Konferansı.</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200024.m4a" length="61878924" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200024.m4a" length="61878924" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2014/04/21/024/</guid>
       <itunes:duration>01:03:29</itunes:duration>
       <itunes:keywords>kodio,developer conference,kod.io</itunes:keywords>
@@ -318,7 +318,7 @@ bitmesine 1 saat kala...</itunes:subtitle>
       <description>Viennarb ve Kodathon.</description>
       <itunes:summary>Viennarb ve Kodathon.</itunes:summary>
       <itunes:subtitle>Viennarb ve Kodathon.</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200023.m4a" length="19369081" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200023.m4a" length="19369081" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2013/12/30/023/</guid>
       <itunes:duration>39:26</itunes:duration>
       <itunes:keywords>viennarb,kodio,ruby,kodathon</itunes:keywords>
@@ -332,7 +332,7 @@ yaptığımız “Behind the Scenes” sohbetinin ikinci bölümü..</descriptio
 yaptığımız “Behind the Scenes” sohbetinin ikinci bölümü..</itunes:summary>
       <itunes:subtitle>26 Ekim 2013 Kod.io Developer Conference sonrasında Seyfettin Başsaraç’la
 yaptığımız “Behind the Scenes” sohbetinin ikinci bölümü..</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200022%20-%20Kod.io%20B%C3%B6l%C3%BCm%202.m4a" length="19807419" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200022%20-%20Kod.io%20B%C3%B6l%C3%BCm%202.m4a" length="19807419" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2013/12/19/022/</guid>
       <itunes:duration>40:19</itunes:duration>
       <itunes:keywords>kodio,developer conference,kod.io,blake,mattt,andrew,joshua,google,ruby,apple,sinatra,afnetworking,java,vagrant,koding</itunes:keywords>
@@ -346,7 +346,7 @@ yaptığımız “Behind the Scenes” sohbetinin ilk bölümü..</description>
 yaptığımız “Behind the Scenes” sohbetinin ilk bölümü..</itunes:summary>
       <itunes:subtitle>26 Ekim 2013 Kod.io Developer Conference sonrasında Seyfettin Başsaraç’la
 yaptığımız “Behind the Scenes” sohbetinin ilk bölümü..</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200021%20-%20Kod.io%20B%C3%B6l%C3%BCm%201.m4a" length="22931067" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200021%20-%20Kod.io%20B%C3%B6l%C3%BCm%201.m4a" length="22931067" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2013/11/14/021/</guid>
       <itunes:duration>46:41</itunes:duration>
       <itunes:keywords>kodio,developer conference,kod.io,blake,mattt,andrew,joshua,google,ruby,apple,sinatra,afnetworking,java,vagrant,koding</itunes:keywords>
@@ -357,7 +357,7 @@ yaptığımız “Behind the Scenes” sohbetinin ilk bölümü..</itunes:subtit
       <description>put.io ekibiyle yaptığımız röportaj.</description>
       <itunes:summary>put.io ekibiyle yaptığımız röportaj.</itunes:summary>
       <itunes:subtitle>put.io ekibiyle yaptığımız röportaj.</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200020.m4a" length="30452471" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200020.m4a" length="30452471" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2013/10/21/020/</guid>
       <itunes:duration>01:02:01</itunes:duration>
       <itunes:keywords>putio</itunes:keywords>
@@ -368,7 +368,7 @@ yaptığımız “Behind the Scenes” sohbetinin ilk bölümü..</itunes:subtit
       <description>17 Ağustos 2013 tarihinde yaptığımız 1.GoyGoy Conf kayıtları.</description>
       <itunes:summary>17 Ağustos 2013 tarihinde yaptığımız 1.GoyGoy Conf kayıtları.</itunes:summary>
       <itunes:subtitle>17 Ağustos 2013 tarihinde yaptığımız 1.GoyGoy Conf kayıtları.</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200019.m4a" length="7773901" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200019.m4a" length="7773901" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2013/10/14/019/</guid>
       <itunes:duration>15:48</itunes:duration>
       <itunes:keywords>goygoy</itunes:keywords>
@@ -397,7 +397,7 @@ Konuk spiker Caner Türkmen.
 
  
  http://railsgirls.com/istanbul</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devPod%20%23%200018.m4a" length="19696992" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devPod%20%23%200018.m4a" length="19696992" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2013/10/07/018/</guid>
       <itunes:duration>40:06</itunes:duration>
       <itunes:keywords>ruby,rails,railsgirls</itunes:keywords>
@@ -408,7 +408,7 @@ Konuk spiker Caner Türkmen.
       <description>Merhaba Sonsuzdöngü...</description>
       <itunes:summary>Merhaba Sonsuzdöngü...</itunes:summary>
       <itunes:subtitle>Merhaba Sonsuzdöngü...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devpod-017.m4a" length="19917202" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devpod-017.m4a" length="19917202" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2013/07/15/017/</guid>
       <itunes:duration>40:31</itunes:duration>
       <itunes:keywords>sonsuz döngü,php,yazılım evi,software development</itunes:keywords>
@@ -419,7 +419,7 @@ Konuk spiker Caner Türkmen.
       <description>phpist 2013 php konferansında teknik sohbet bölümünden 22 dakika...</description>
       <itunes:summary>phpist 2013 php konferansında teknik sohbet bölümünden 22 dakika...</itunes:summary>
       <itunes:subtitle>phpist 2013 php konferansında teknik sohbet bölümünden 22 dakika...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devpod-phpist13-ozel-2.m4a" length="11554998" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devpod-phpist13-ozel-2.m4a" length="11554998" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2013/07/07/001/</guid>
       <itunes:duration>23:30</itunes:duration>
       <itunes:keywords>php,phpist</itunes:keywords>
@@ -433,7 +433,7 @@ Bölüm 1...</description>
 Bölüm 1...</itunes:summary>
       <itunes:subtitle>phpist 2013 php konferansında yaptığımız canlı kayıtlar ve röportajlar! 
 Bölüm 1...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devpod-phpist13-ozel-1.m4a" length="10023707" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devpod-phpist13-ozel-1.m4a" length="10023707" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2013/07/07/000/</guid>
       <itunes:duration>20:23</itunes:duration>
       <itunes:keywords>php,phpist</itunes:keywords>
@@ -444,7 +444,7 @@ Bölüm 1...</itunes:subtitle>
       <description>6 Temmuz 2013 tarihinde yapılacak olan "PHPIST" php konferansı ile ilgili olarak organizatör arkadaşlarla konuştum.</description>
       <itunes:summary>6 Temmuz 2013 tarihinde yapılacak olan "PHPIST" php konferansı ile ilgili olarak organizatör arkadaşlarla konuştum.</itunes:summary>
       <itunes:subtitle>6 Temmuz 2013 tarihinde yapılacak olan "PHPIST" php konferansı ile ilgili olarak organizatör arkadaşlarla konuştum.</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devpod-016.m4a" length="20829309" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devpod-016.m4a" length="20829309" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2013/06/23/016/</guid>
       <itunes:duration>42:23</itunes:duration>
       <itunes:keywords>php,phpist,php konferansı</itunes:keywords>
@@ -455,7 +455,7 @@ Bölüm 1...</itunes:subtitle>
       <description>JSPY Conf 2013 sonrasında yaptığımız kayıt...</description>
       <itunes:summary>JSPY Conf 2013 sonrasında yaptığımız kayıt...</itunes:summary>
       <itunes:subtitle>JSPY Conf 2013 sonrasında yaptığımız kayıt...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devpod-015.m4a" length="18398125" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devpod-015.m4a" length="18398125" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2013/04/19/015/</guid>
       <itunes:duration>37:25</itunes:duration>
       <itunes:keywords>jspyconf</itunes:keywords>
@@ -466,7 +466,7 @@ Bölüm 1...</itunes:subtitle>
       <description>JSPY Conf 2013’te yaptığımız random kayıtlar...</description>
       <itunes:summary>JSPY Conf 2013’te yaptığımız random kayıtlar...</itunes:summary>
       <itunes:subtitle>JSPY Conf 2013’te yaptığımız random kayıtlar...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devpod-jspy2013-enstantaneler.m4a" length="3571594" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devpod-jspy2013-enstantaneler.m4a" length="3571594" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2013/04/19/001/</guid>
       <itunes:duration>07:13</itunes:duration>
       <itunes:keywords>jspyconf,koding</itunes:keywords>
@@ -480,7 +480,7 @@ röportaj...</description>
 röportaj...</itunes:summary>
       <itunes:subtitle>JSPY Conf 2013’te Heroku’dan sevgili Kenneth Reitz’la
 röportaj...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropboxusercontent.com/u/490540/PodCast/devPod/devpod-jspy2013-kennethr.m4a" length="8553949" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devpod-jspy2013-kennethr.m4a" length="8553949" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2013/04/19/000/</guid>
       <itunes:duration>17:22</itunes:duration>
       <itunes:keywords>jspyconf,python,heroku</itunes:keywords>
@@ -497,7 +497,7 @@ tanıttık.</itunes:summary>
       <itunes:subtitle>devPod Özel Sayısı: jspyconf.org organizatörleriyle 30-31 Mart 2013
 tarihlerinde düzenlenecek olan etkinliği konuştuk. Katılan konuşmacıları
 tanıttık.</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropbox.com/u/490540/PodCast/devPod/devpod-014.m4a" length="24450531" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devpod-014.m4a" length="24450531" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2013/03/16/014/</guid>
       <itunes:duration>49:46</itunes:duration>
       <itunes:keywords>python,ruby,js,javascript,jspy,jspy conf,konferans,jstanbul,sinatra,django,opera</itunes:keywords>
@@ -514,7 +514,7 @@ konuştuk...</itunes:summary>
       <itunes:subtitle>DevPod ekibi olarak, Lastmoon Games’den Levent ve Alper ile son
 iOS oyunları olan Purple Cape’i ve iOS Development’ı
 konuştuk...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropbox.com/u/490540/PodCast/devPod/devpod-013.m4a" length="24119211" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devpod-013.m4a" length="24119211" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2013/03/11/013/</guid>
       <itunes:duration>48:45</itunes:duration>
       <itunes:keywords>ios,game,gamedev,purple,purple cape,lastmoon,lastmoon games,forestmoon,girisim,etohum</itunes:keywords>
@@ -528,7 +528,7 @@ kalanlar, yazılım dünyasındaki kaydadeğer gelişmeler vs...</description>
 kalanlar, yazılım dünyasındaki kaydadeğer gelişmeler vs...</itunes:summary>
       <itunes:subtitle>DevPod ekibi, 2012 yılının panaromasını yapar. Ekibin 2012'den aklında
 kalanlar, yazılım dünyasındaki kaydadeğer gelişmeler vs...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropbox.com/u/490540/PodCast/devPod/devpod-012.m4a" length="24881428" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devpod-012.m4a" length="24881428" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2013/01/28/012/</guid>
       <itunes:duration>50:38</itunes:duration>
       <itunes:keywords>python,ruby,django,rails,devops,development,vigo,devpod,cihan okyay</itunes:keywords>
@@ -545,7 +545,7 @@ tanıttık...</itunes:summary>
       <itunes:subtitle>Yazılım geliştirme ile ilgili web üzerinde online eğitim veren siteleri konuştuk.
 Python, Ruby, iOS ve Web Development konularını öğreten kaynaklar ve kişileri
 tanıttık...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropbox.com/u/490540/PodCast/devPod/devpod-011.m4a" length="21108291" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devpod-011.m4a" length="21108291" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2012/12/18/011/</guid>
       <itunes:duration>35:47</itunes:duration>
       <itunes:keywords>python,ruby,codeschool,das,destroy all software,ruby tapas,zed shaw,gary bernhardt,peepcode</itunes:keywords>
@@ -556,7 +556,7 @@ tanıttık...</itunes:subtitle>
       <description>24 Kasım 2012 Python İstanbul Etkinliği...</description>
       <itunes:summary>24 Kasım 2012 Python İstanbul Etkinliği...</itunes:summary>
       <itunes:subtitle>24 Kasım 2012 Python İstanbul Etkinliği...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropbox.com/u/490540/PodCast/devPod/devpod-010.m4a" length="17490566" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devpod-010.m4a" length="17490566" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2012/12/07/010/</guid>
       <itunes:duration>34:09</itunes:duration>
       <itunes:keywords>py24k,python istanbul,24 Kasım 2012</itunes:keywords>
@@ -570,7 +570,7 @@ gittik!</description>
 gittik!</itunes:summary>
       <itunes:subtitle>devPod ekibi olarak Ankara'ya, Spp42'nin düzenlediği MongoDB etkinliğine
 gittik!</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropbox.com/u/490540/PodCast/devPod/devpod-009.m4a" length="11178825" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devpod-009.m4a" length="11178825" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2012/11/30/009/</guid>
       <itunes:duration>22:43</itunes:duration>
       <itunes:keywords>devpod,ankara,mongodb,10gen,spp42,etkinkik</itunes:keywords>
@@ -584,7 +584,7 @@ etkinlikleri konuştuk.</description>
 etkinlikleri konuştuk.</itunes:summary>
       <itunes:subtitle>Cihan Okyay'la birlikte web development dünyasından son haberleri ve
 etkinlikleri konuştuk.</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropbox.com/u/490540/PodCast/devPod/devpod-008.m4a" length="17609920" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devpod-008.m4a" length="17609920" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2012/11/10/008/</guid>
       <itunes:duration>35:48</itunes:duration>
       <itunes:keywords>python,ruby,pyist,ruby,ruby 2.0,kitap,etkinlik</itunes:keywords>
@@ -598,7 +598,7 @@ Python, Ruby ve web development başlıca konularımız arasındaydı...</descri
 Python, Ruby ve web development başlıca konularımız arasındaydı...</itunes:summary>
       <itunes:subtitle>Cihan Okyay'la birlikte son aylarda katıldığımız etkinlikler hakkında konuştuk.
 Python, Ruby ve web development başlıca konularımız arasındaydı...</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropbox.com/u/490540/PodCast/devPod/devpod-007.m4a" length="11337022" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devpod-007.m4a" length="11337022" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2012/11/01/007/</guid>
       <itunes:duration>23:02</itunes:duration>
       <itunes:keywords>python,ruby,devpod,dev,development,özgür web günleri,hacker space</itunes:keywords>
@@ -609,7 +609,7 @@ Python, Ruby ve web development başlıca konularımız arasındaydı...</itunes
       <description>jistanbul, Mac Book Pro 15" Retina, Mac OS X Mountain Lion</description>
       <itunes:summary>jistanbul, Mac Book Pro 15" Retina, Mac OS X Mountain Lion</itunes:summary>
       <itunes:subtitle>jistanbul, Mac Book Pro 15" Retina, Mac OS X Mountain Lion</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropbox.com/u/490540/PodCast/devPod/devpod-006.m4a" length="17543981" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devpod-006.m4a" length="17543981" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2012/08/05/006/</guid>
       <itunes:duration>34:06</itunes:duration>
       <itunes:keywords>jstanbul,osx mountain lion,retina,mbp,macbookpro</itunes:keywords>
@@ -620,7 +620,7 @@ Python, Ruby ve web development başlıca konularımız arasındaydı...</itunes
       <description>Sublime Text 2, Destroy All Software, Google IO, Yeoman, Jamjs ve podcast önerileri</description>
       <itunes:summary>Sublime Text 2, Destroy All Software, Google IO, Yeoman, Jamjs ve podcast önerileri</itunes:summary>
       <itunes:subtitle>Sublime Text 2, Destroy All Software, Google IO, Yeoman, Jamjs ve podcast önerileri</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropbox.com/u/490540/PodCast/devPod/devpod-005.m4a" length="17872739" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devpod-005.m4a" length="17872739" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2012/07/01/005/</guid>
       <itunes:duration>36:22</itunes:duration>
       <itunes:keywords>sublime text 2,destroy all software,das,yeoman,jamjs,googleio,screencasts,development</itunes:keywords>
@@ -631,7 +631,7 @@ Python, Ruby ve web development başlıca konularımız arasındaydı...</itunes
       <description>Kişisel durumlar, PyIST Haziran buluşması, Geek Talk Radio</description>
       <itunes:summary>Kişisel durumlar, PyIST Haziran buluşması, Geek Talk Radio</itunes:summary>
       <itunes:subtitle>Kişisel durumlar, PyIST Haziran buluşması, Geek Talk Radio</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropbox.com/u/490540/PodCast/devPod/devpod-004.m4a" length="9073439" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devpod-004.m4a" length="9073439" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2012/06/27/004/</guid>
       <itunes:duration>18:00</itunes:duration>
       <itunes:keywords>pyist,gtr,wwdc</itunes:keywords>
@@ -642,7 +642,7 @@ Python, Ruby ve web development başlıca konularımız arasındaydı...</itunes
       <description>WWDC 2012 tahminleri, MacUpdate promo ve Djangocon.eu 2012 Röportajı: Özgür Aksakal</description>
       <itunes:summary>WWDC 2012 tahminleri, MacUpdate promo ve Djangocon.eu 2012 Röportajı: Özgür Aksakal</itunes:summary>
       <itunes:subtitle>WWDC 2012 tahminleri, MacUpdate promo ve Djangocon.eu 2012 Röportajı: Özgür Aksakal</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropbox.com/u/490540/PodCast/devPod/devpod-003.m4a" length="12760497" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devpod-003.m4a" length="12760497" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2012/06/11/003/</guid>
       <itunes:duration>25:58</itunes:duration>
       <itunes:keywords>wwdc,djangoconeu,django,macupdate</itunes:keywords>
@@ -659,7 +659,7 @@ Debugging Sucks Testing Rocks!</itunes:summary>
       <itunes:subtitle>WWDC 2012, Fluentconf 2012, All the Things Digital, Adobe Photoshop CS6,
 Twitter, JavaScript, Tipografi, Test Driven Development,
 Debugging Sucks Testing Rocks!</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropbox.com/u/490540/PodCast/devPod/devpod-002.m4a" length="17589264" type="audio/x-m4a"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devpod-002.m4a" length="17589264" type="audio/x-m4a"/>
       <guid isPermaLink="false">http://devpod.org/2012/06/04/002/</guid>
       <itunes:duration>35:47</itunes:duration>
       <itunes:keywords>wwdc,fluentconf,tdd,adobe cs6</itunes:keywords>
@@ -673,7 +673,7 @@ Coda2 + Diet Coda, Pry, PyQuery, FixieJS, Djangocon EU 2012</description>
 Coda2 + Diet Coda, Pry, PyQuery, FixieJS, Djangocon EU 2012</itunes:summary>
       <itunes:subtitle>"Kapatılan bölüm, kapatılmayan bilim", PyIST, Facebook Camera,
 Coda2 + Diet Coda, Pry, PyQuery, FixieJS, Djangocon EU 2012</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropbox.com/u/490540/PodCast/devPod/devpod-001.mp3" length="17603930" type="audio/mpeg"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devpod-001.mp3" length="17603930" type="audio/mpeg"/>
       <guid isPermaLink="false">http://devpod.org/2012/05/28/001/</guid>
       <itunes:duration>36:37</itunes:duration>
       <itunes:keywords>celery,coda 2,djangoconeu,javascript,pry,python,rabitmq,ruby,rubymotion,diet code</itunes:keywords>
@@ -684,7 +684,7 @@ Coda2 + Diet Coda, Pry, PyQuery, FixieJS, Djangocon EU 2012</itunes:subtitle>
       <description>ve en sonunda benim de bir PodCast’im oldu galiba!</description>
       <itunes:summary>ve en sonunda benim de bir PodCast’im oldu galiba!</itunes:summary>
       <itunes:subtitle>ve en sonunda benim de bir PodCast’im oldu galiba!</itunes:subtitle>
-      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/dl.dropbox.com/u/490540/PodCast/devPod/devpod-000.mp3" length="5164089" type="audio/mpeg"/>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/devpod-000.mp3" length="5164089" type="audio/mpeg"/>
       <guid isPermaLink="false">http://devpod.org/2012/05/24/000/</guid>
       <itunes:duration>10:42</itunes:duration>
       <itunes:keywords>vigo,podcast,türkçe,development,ruby,python</itunes:keywords>
