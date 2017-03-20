@@ -25,6 +25,7 @@ task :podcast, :episode_number, :episode_date do |t, args|
   open(filename, 'w') do |post|
     post.puts "---"
     post.puts "title: \"title\""
+    post.puts "tanitim: \"tanitim\""
     post.puts "date: \"#{t.strftime('%a, %e %b %Y %H:%M:%S')}\""
     post.puts "tags: "
     post.puts "length: \"1024\""

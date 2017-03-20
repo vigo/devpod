@@ -4,7 +4,6 @@ module CustomHelpers
   end
   
   def podtrack_url(url)
-    url = "#{storage_url}#{url}"
     "#{podcast_prefix}#{url.sub(/https?:\/\//, "")}"
   end
   
@@ -16,6 +15,14 @@ module CustomHelpers
 
   def custom_pager(**options)
     output = []
+    # paginate =
+    # num_pages =
+    # current_page =
+    # prev_page =
+    # next_page = options[:next_page]
+    # url_home = options[:url_home]
+    # url_schema = options[:url_schema]
+
     if options[:paginate] && options[:num_pages] > 1
       output << '<ul class="pagination">'
 

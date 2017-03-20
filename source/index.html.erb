@@ -1,8 +1,8 @@
 ---
 pageable: true
 per_page: 10
-title: "Türkçe Developer Podcast"
-description:  "Türkçe kaynak yok diyenlere müjde! Türkçe podcast! Açık kaynak, Mac, Linux ve tüm popüler web teknolojileri!"
+title: "devpod: Türkçe Yazılım Geliştirici Podcasti"
+description:  "Yazılım geliştiricilere yönelik 2012'den beri yayınına devam eden bir podcast! Uğur “vigo” Özyılmazel ve Üstün Özgür sunuculuğunda her ay önemli bir yazılım geliştiriciyi davet ettiğimiz programda yazılım sektörüne ait her konuya değiniyoruz. Modern yazılım teknolojileri, yaygın kütüphaneler, yazılım dilleri, ünlü yazılımcıların yaşam öyküleri, iş deneyimleri... Hepsi devpod'da!"
 ---
 <div class="block">
     <div class="container">
@@ -10,7 +10,7 @@ description:  "Türkçe kaynak yok diyenlere müjde! Türkçe podcast! Açık ka
             <div class="col-xs-12 col-sm-6 col-sm-offset-3">
 
                 <%= partial "partials/logo_part" %>
-                
+
                 <%= partial "partials/list_page_articles", :locals => {
                     :page_articles => page_articles,
                     :paginate => paginate,
@@ -21,8 +21,8 @@ description:  "Türkçe kaynak yok diyenlere müjde! Türkçe podcast! Açık ka
                     :url_home => "/",
                     :url_schema => "/sayfa/%d/"
                 } %>
-                
-                
+
+
                 <div class="archives visible-xs">
                     <p>Arşiv&rsquo;de toplam <strong><%= blog.articles.size %></strong> kayıt bulunuyor.</p>
                     <ul class="list-unstyled">
@@ -31,7 +31,7 @@ description:  "Türkçe kaynak yok diyenlere müjde! Türkçe podcast! Açık ka
                         <% end %>
                     </ul>
                 </div>
-                
+
             </div>
         </div>
     </div>

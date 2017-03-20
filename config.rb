@@ -31,8 +31,6 @@ set :canonical_url, 'http://devpod.org'
 set :markdown_engine, :redcarpet
 set :markdown, :layout_engine => :erb, :autolink => true
 set :podcast_prefix, "http://www.podtrac.com/pts/redirect.mp3/"
-set :storage_url, "http://devpod-audio.s3.amazonaws.com/"
-# http://devpod-audio.s3.amazonaws.com/devPod%20%23%200021%20-%20Kod.io%20B%C3%B6l%C3%BCm%201.m4a
 
 configure :build do
   activate :minify_css
