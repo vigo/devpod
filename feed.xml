@@ -27,6 +27,17 @@
     <itunes:explicit>no</itunes:explicit>
     <itunes:keywords>vigo,amiga,commodore,development,yazılım,yazilim,software,python,ruby,php,django,rails,apple,mac,ipad,iphone,ios,applescript,shell,bash,textmate,6502,68000,bronx,demoscene,zombieboys</itunes:keywords>
     <item>
+      <title>#043 - Semih Demirer</title>
+      <pubDate>Sat, 01 Apr 2017 06:56:37 -0000</pubDate>
+      <description>O bir Commodore 64 Coder’ı... Apple’da GPU Mühendisi... Konuğumuz Semih Demirer ...</description>
+      <itunes:summary>O bir Commodore 64 Coder’ı... Apple’da GPU Mühendisi... Konuğumuz Semih Demirer ...</itunes:summary>
+      <itunes:subtitle>O bir Commodore 64 Coder’ı... Apple’da GPU Mühendisi... Konuğumuz Semih Demirer ...</itunes:subtitle>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/0043-semih-demirer.m4a" length="56835546" type="audio/x-m4a"/>
+      <guid isPermaLink="false">http://devpod.org/2017/04/01/043/</guid>
+      <itunes:duration>01:55:46</itunes:duration>
+      <itunes:keywords>c64,demoscene,glance,apple,gpu</itunes:keywords>
+    </item>
+    <item>
       <title>#042 - Bilgem Çakır</title>
       <pubDate>Mon, 13 Feb 2017 03:00:00 -0000</pubDate>
       <description>Kendisi OLDSKOOL C64 Coder'ı, Demoscener, eski bir Microsoft developer'ı, 
