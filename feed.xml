@@ -27,6 +27,23 @@
     <itunes:explicit>no</itunes:explicit>
     <itunes:keywords>vigo,amiga,commodore,development,yazılım,yazilim,software,python,ruby,php,django,rails,apple,mac,ipad,iphone,ios,applescript,shell,bash,textmate,6502,68000,bronx,demoscene,zombieboys</itunes:keywords>
     <item>
+      <title>#044 - Ayşegül Yönet</title>
+      <pubDate>Mon, 08 May 2017 07:10:47 -0000</pubDate>
+      <description>Autodesk’te yazılım mühendisi olarak çalışan,
+Play projesinin mimarlarından sevgili Ayşegül
+Yönet ile JavaScript, San Francisco, sektördeki kadın yazılımcılardan konuştuk!</description>
+      <itunes:summary>Autodesk’te yazılım mühendisi olarak çalışan,
+Play projesinin mimarlarından sevgili Ayşegül
+Yönet ile JavaScript, San Francisco, sektördeki kadın yazılımcılardan konuştuk!</itunes:summary>
+      <itunes:subtitle>Autodesk’te yazılım mühendisi olarak çalışan,
+Play projesinin mimarlarından sevgili Ayşegül
+Yönet ile JavaScript, San Francisco, sektördeki kadın yazılımcılardan konuştuk!</itunes:subtitle>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/devpod-audio.s3.amazonaws.com/0044-aysegul-yonet.m4a" length="46990882" type="audio/x-m4a"/>
+      <guid isPermaLink="false">http://devpod.org/2017/05/08/044/</guid>
+      <itunes:duration>01:35:42</itunes:duration>
+      <itunes:keywords>autodesk,3d,javascript</itunes:keywords>
+    </item>
+    <item>
       <title>#043 - Semih Demirer</title>
       <pubDate>Sat, 01 Apr 2017 06:56:37 -0000</pubDate>
       <description>O bir Commodore 64 Coder’ı... Apple’da GPU Mühendisi... Konuğumuz Semih Demirer ...</description>
