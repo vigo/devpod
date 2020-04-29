@@ -22,7 +22,7 @@ activate :blog do |blog|
 end
 
 activate :directory_indexes
-activate :livereload
+# activate :livereload
 
 set :css_dir, 'public/css'
 set :js_dir, 'public/js'
